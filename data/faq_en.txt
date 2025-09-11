@@ -1,0 +1,121 @@
+FAQ - Frequently Asked Questions:
+
+1. What are your main strengths?
+- I am results-oriented, proactive, and highly adaptable. I combine strong technical knowledge with a deep understanding of business processes, which allows me to bridge the gap between IT and operations.
+
+2. What are your main weaknesses?
+- I tend to be very detail-oriented, which can sometimes slow me down. However, I’ve learned to balance precision with efficiency over time.
+
+3. What motivates you at work?
+- Solving complex problems, learning new technologies, and creating tools or solutions that make processes faster and more efficient.
+
+4. What is your greatest professional achievement?
+- Designing and implementing a B2B marketplace web platform that reduced processing times by 70% and improved data accuracy by 90%.
+
+5. Why do you want to work with us?
+- I’m looking for a team where I can continue to grow while contributing to impactful projects. Your company’s vision aligns with my values and technical interests.
+
+6. What are your salary expectations?
+- I’m open to discussing compensation based on the role's responsibilities and the overall benefits package.
+
+7. Are you open to relocation or remote work?
+- Yes, I’m fully open to remote opportunities and flexible to relocate depending on the project and team dynamics.
+
+8. How do you handle stress or pressure?
+- I prioritize tasks, break them into smaller steps, and stay focused on solutions. I also rely on documentation and automation to reduce repetitive stressors.
+
+9. Describe your leadership style.
+- I lead by example, promote collaboration, and encourage continuous improvement through constructive feedback and knowledge sharing.
+
+10. What programming languages are you most comfortable with?
+- Python, SQL, JavaScript, and C#. I also have experience with Go, Ruby on Rails, and Flutter.
+
+11. What technologies or tools have you worked with recently?
+- Snowflake, Boomi, SSIS, Docker, FastAPI, Strapi, PostgreSQL, and RabbitMQ.
+
+12. Do you prefer frontend or backend development?
+- I enjoy working across the stack, but I particularly thrive in backend development and systems integration.
+
+13. How do you stay updated with new technologies?
+- I follow technical blogs, take online courses, and participate in open-source or personal side projects.
+
+14. Can you describe a time when you solved a complex problem?
+- I automated a 6-hour Excel financial report into a web dashboard using C#, reducing generation time to under a minute.
+
+15. What’s your availability?
+- I’m available to start with two weeks' notice, or sooner depending on current commitments.
+
+16. Are you legally authorized to work in Canada?
+- Yes, I am legally authorized to work in Canada.
+
+17. How do you handle disagreements within a team?
+- I listen actively, focus on facts over opinions, and work toward consensus with professionalism and respect.
+
+18. What’s your preferred working environment?
+- I prefer collaborative environments that value initiative, transparency, and continuous learning.
+
+19. Where do you see yourself in 3 to 5 years?
+- Growing into a lead developer or solution architect role, mentoring others, and delivering high-impact projects.
+
+20. Why should we hire you?
+- I bring a rare mix of technical expertise, business insight, and international logistics experience, making me highly versatile for complex, cross-functional challenges.
+
+21. What experience do you have in logistics and distribution?
+- I managed logistics operations at Crystal S.A.S for 14 years, overseeing national distribution, warehouse operations, and third-party logistics coordination.
+
+22. What size of operations have you handled?
+- I led distribution for a network of over 120 retail stores and managed a warehouse with over 20,000 SKUs and 50+ employees.
+
+23. What KPIs do you typically track in logistics?
+- Order accuracy, on-time delivery rate, inventory turnover, picking productivity, and distribution cost per unit.
+
+24. What warehouse systems have you worked with?
+- I’ve worked with WMS, RF technologies, barcode systems, and integrated ERP systems for inventory and logistics tracking.
+
+25. Have you managed third-party logistics (3PL) providers?
+- Yes, I’ve negotiated contracts and managed performance of 3PLs for last-mile distribution and nationwide deliveries.
+
+26. What’s your approach to reducing logistics costs?
+- I focus on route optimization, demand forecasting, cross-docking, and inventory consolidation to reduce costs and increase efficiency.
+
+27. How do you manage inventory accuracy?
+- Through regular cycle counts, system reconciliations, and strict inbound/outbound verification processes.
+
+28. What challenges have you faced in logistics and how did you solve them?
+- I’ve managed large-scale inventory discrepancies and solved them by redesigning warehouse workflows and implementing stricter quality control.
+
+29. How do you ensure timely deliveries?
+- By maintaining accurate forecasts, aligning closely with sales and production, and using performance dashboards to monitor deliveries in real time.
+
+30. Describe your experience with returns or reverse logistics.
+- I developed and implemented a reverse logistics process to handle returns from retail stores, improving visibility and reducing write-offs.
+
+31. Have you worked with cross-functional teams?
+- Yes, I regularly collaborated with sales, production, and finance to align logistics goals with overall business strategy.
+
+32. What safety protocols have you implemented in warehouses?
+- I enforced PPE policies, forklift safety training, and implemented 5S methodology to maintain a clean and secure environment.
+
+33. How do you handle peak season demand?
+- With temporary staff onboarding, extended shifts, and cross-trained teams to ensure flexibility and productivity during high volume periods.
+
+34. What’s your approach to staff training and development?
+- I build competency matrices, offer hands-on coaching, and promote from within to boost morale and reduce turnover.
+
+35. How do you prioritize urgent orders?
+- I classify them in the system, coordinate with dispatch, and realign resources without compromising regular operations.
+
+36. Have you led logistics digital transformation initiatives?
+- Yes, I’ve introduced scanning systems, digitized warehouse documentation, and integrated dashboards for real-time performance monitoring.
+
+37. How do you monitor supplier or vendor compliance?
+- Through SLAs, scorecards, and regular performance reviews to ensure accountability and quality standards.
+
+38. How do you balance cost vs. service in logistics decisions?
+- I analyze total landed cost and customer impact to make decisions that align with business goals and client satisfaction.
+
+39. What software or tools do you use in logistics?
+- WMS, ERP systems, Excel, Power BI, and specialized tools for route planning and inventory forecasting.
+
+40. What makes you an effective logistics manager?
+- My ability to optimize processes, manage large teams, and align logistics with business objectives—while maintaining service excellence.

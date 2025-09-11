@@ -74,25 +74,25 @@ Experience:
   * Managed resources and operations to meet planning targets.
 
 Skills and Proficiency:
-- Full Stack Developer:
-  * SQL Server: 80%
-  * Snowflake: 75%
-  * Boomi: 70%
-  * Python: 80%
-  * C#: 65%
-  * Ruby on Rails: 65%
-  * Go: 65%
-  * Flutter: 55%
-  * HTML: 80%
-  * CSS: 65%
-  * JavaScript: 75%
+- Full Stack Developer Skills:
+  - SQL Server: 80%
+  - Snowflake: 75%
+  - Boomi: 70%
+  - Python: 80%
+  - C#: 65%
+  - Ruby on Rails: 65%
+  - Go: 65%
+  - Flutter: 55%
+  - HTML: 80%
+  - CSS: 65%
+  - JavaScript: 75%
 
-- Logistic Manager:
-  * Supply Chain Management: 85%
-  * Operations Management: 80%
-  * Inventory Management: 90%
-  * Distribution Center Operations: 90%
-  * Business Analysis: 80%
-  * Warehouse Management: 90%
-  * Project Management: 80%
-  * Strategic Planning: 80%
+- Logistic Manager Skills:
+  - Supply Chain Management: 85%
+  - Operations Management: 80%
+  - Inventory Management: 90%
+  - Distribution Center Operations: 90%
+  - Business Analysis: 80%
+  - Warehouse Management: 90%
+  - Project Management: 80%
+  - Strategic Planning: 80%

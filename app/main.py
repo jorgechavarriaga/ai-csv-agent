@@ -4,7 +4,7 @@ from sqlalchemy.exc import SQLAlchemyError, OperationalError
 from app.routers import agent, health, logs
 from app.utils.db import engine, Base
 from app.utils.error_handler import register_exception_handlers  
-from app.utils.vectorstore import get_vector_store
+from app.services.vectorstore import get_all_vector_stores
 from app.utils.logging.logger import get_logger
 
 logger = get_logger("AI Agent")
@@ -14,7 +14,7 @@ app = FastAPI(
     title="AI Agent with pgvector",
     description="""
     This API provides access to an AI-powered assistant restricted to a specific dataset
-    (loaded from `data/data.txt` and stored in PostgreSQL with pgvector).
+    (loaded from `data/cv_en.txt` and stored in PostgreSQL with pgvector).
 
     ## Endpoints
     - **/api/v1/ask** → Ask a question and get an answer based strictly on the dataset.
@@ -34,14 +34,14 @@ register_exception_handlers(app)
 def on_startup():
     try:
         Base.metadata.create_all(bind=engine)
-        app.state.vector_store = get_vector_store()
-        if app.state.vector_store:
-            logger.info("Vector store initialized successfully.")
+        app.state.vector_stores = get_all_vector_stores()  
+        if app.state.vector_stores:
+            logger.info("Vector stores initialized successfully.")
         else:
-            logger.warning("Vector store not available at startup.")
+            logger.warning("Vector stores not available at startup.")
     except (SQLAlchemyError, OperationalError) as e:
         logger.error("Database not reachable during startup: %s", e)
-        app.state.vector_store = None
+        app.state.vector_stores = {}
 
 @app.on_event("shutdown")
 def on_shutdown():
