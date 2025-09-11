@@ -1,0 +1,60 @@
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+.venv-ai-agent/
+.venv/
+venv/
+ENV/
+env/
+
+# --- Environment files (keep only templates tracked) ---
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+
+# --- Packages / builds / installers ---
+build/
+dist/
+.eggs/
+*.egg-info/
+pip-wheel-metadata/
+*.egg
+
+# --- Tests / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# --- Type checkers / linters ---
+.mypy_cache/
+.pytype/
+.pyre/
+.ruff_cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS files ---
+.DS_Store
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Optional tools ---
+# .python-version   # uncomment to ignore pyenv version file
+# __pypackages__/   # PEP 582

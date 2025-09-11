@@ -1,0 +1,98 @@
+Name: Jorge Chavarriaga
+Titles: Full Stack Developer, Security Engineer, Logistic Manager, Mechanical Engineer
+
+Contact:
+- Email: jorge.chavarriaga@gmail.com
+- Phone: +1 418 321 1335
+- Website: https://www.chavazystem.tech
+- LinkedIn: linkedin.com/in/jorge-chava
+- GitHub: github.com/jorgechavarriaga
+- Whatsapp
+- Telegram
+
+Education:
+- Google Business Intelligence | Royal Alberta College | 2024 | Online
+- Google Advanced Data Analytics | Royal Alberta College | 2023 | Online
+- Google Data Analytics | Royal Alberta College | 2023 | Online
+- Google IT Automation with Python | Royal Alberta College | 2023 | Online
+- Security Engineer Nanodegree | Udacity | 2021 | Online
+- Full Stack Developer | Codeboxx Technology School | 2020-2021 | Canada
+- Specialization in Manager Skills | The George Washington University School of Business | 2017 | Colombia
+- Diploma in Business Logistic | Medellin University | 2005-2006 | Colombia
+- Mechanical Engineering | EAFIT University | 1992-1997 | Colombia
+
+Languages:
+- Spanish: 100% (Native)
+- English: 80% (Fluent)
+- French: 50% (Intermediate)
+
+International Fairs:
+- Warehouses Logistic Tour | Momentum Manhattan
+- RFID Logistic Tour | RFID Journal
+- Promat
+
+Interests:
+- Music
+- Hiking
+- Cooking
+- Technology
+
+Summary of Qualifications:
+Highly motivated, energetic and self-driven engineer with thorough understanding of business environment, cross-cultural management and business potential.
+Experienced professional with demonstrated skills in distribution, logistics, warehouse management, transportation and planning.
+Strategic, analytic, results oriented, responsible and efficient. Strong negotiation skills.
+Ability to successfully drive initiatives and lead initiatives within cross functional teams.
+Effective supporting and contributing to the development of processes and systems to manage distribution transactions.
+Proficient identifying opportunities to lower costs and increase productivity. Able to set targets and budgets plans to achieve specific goals.
+
+Experience:
+- Full Stack Developer | CodeBoxx Digital Solutions | Canada | Jun 2020 - Present
+  * Monitored and supported tasks across SSIS, BOOMI, and Snowflake, providing first-level troubleshooting and resolution for platform issues.
+  * Led the design and implementation of a B2B marketplace web application, enabling efficient upload and validation of product information. This solution streamlined integration with external e-commerce platforms, reducing processing times by 70% and improving data accuracy by 90%.
+  * Implemented a C# solution for transforming a financial report from Excel into a web-based dashboard, reducing generation time from 4–6 hours to under a minute.
+  * Documented critical processes, identified repetitive failures, and implemented improvements, resulting in a 95% reduction in failure rates.
+  * Developed a connector in Go (Golang) for integrating purchase orders between a vendor and suppliers.
+
+- Warehouse Clerk | Ssense | Canada | Oct 2019 - Jan 2020
+  * Responsible for picking items in the warehouse to supply daily orders.
+  * Conducted quality checks on returned garments.
+
+- Logistic and Distribution Manager | Crystal SAS | Colombia | 2004 - 2018
+  * Led national and international logistic distribution operations.
+  * Managed CAD $3.5M budget execution.
+  * Expanded the main distribution center by 37%, generating 5% annual savings.
+  * Achieved 19% savings in freight contracts by standardizing bidding processes.
+  * Implemented satellite operations for packing, returns, and distribution, saving 9% annually.
+  * Participated in ERP SAP AFS scoping and WMS Manhattan upgrade (2004 → 2012).
+  * Directed RFID pilot from distribution center to point of sale.
+  * Managed e-commerce and POP distribution centers in Colombia, Mexico, and Costa Rica.
+
+- Manager, Raw Materials Distribution Center | Crystal SAS | Colombia | 1999 - 2004
+  * Designed and implemented processes for the new raw materials distribution center.
+  * Reduced delivery times by 12% via reengineering.
+  * Standardized advance ship notice in Colombia with GS1, reducing reception times by 22%.
+  * Managed resources and operations to meet planning targets.
+
+Skills and Proficiency:
+- Full Stack Developer:
+  * SQL Server: 80%
+  * Snowflake: 75%
+  * Boomi: 70%
+  * Python: 80%
+  * C#: 65%
+  * Ruby on Rails: 65%
+  * Go: 65%
+  * Flutter: 55%
+  * HTML: 80%
+  * CSS: 65%
+  * JavaScript: 75%
+
+- Logistic Manager:
+  * Supply Chain Management: 85%
+  * Operations Management: 80%
+  * Inventory Management: 90%
+  * Distribution Center Operations: 90%
+  * Business Analysis: 80%
+  * Warehouse Management: 90%
+  * Project Management: 80%
+  * Strategic Planning: 80%
