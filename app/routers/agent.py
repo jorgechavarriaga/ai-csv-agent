@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Request
-from app.services.log_service import save_log
+from app.services.log_service import save_log, get_last_messages
 from app.utils.llm import get_chat_model
 from app.schemas import AgentQuery, AgentResponse, AgentAnswer, ErrorResponse
 
@@ -16,50 +16,71 @@ router = APIRouter(tags=["Agent"])
         500: {"description": "Unexpected error", "model": ErrorResponse},
     }
 )
+
+
 def ask_document(query: AgentQuery, request: Request):
     """
     Ask a question to Jorge's AI Agent.
 
-    - The agent searches **only** within the ingested dataset (data.txt).
-    - If the requested information is not found, it responds politely
-      that the answer is not available.
+    - Searches across ALL loaded vector collections (cv, faq, etc.).
+    - If the answer isn't found in any, responds politely.
     """
-    vector_store = request.app.state.vector_store
-    if vector_store is None:
-        return ErrorResponse(
-            error={"code": 503, "message": "Vector store not available"}
-        )
+    session_id = query.session_id
+    vector_stores = request.app.state.vector_stores
+    best_docs = []
 
-    retriever = vector_store.as_retriever()
-    relevant_docs = retriever.invoke(query.question)
+    question = query.question.strip()
 
-    # If no relevant docs → polite fallback
-    if not relevant_docs:
-        answer_text = (
-            "I couldn’t find that information in Jorge’s profile. "
-            "Please ask about his background, education, experience, or skills."
-        )
-        save_log(query.question, answer_text)
-        return AgentResponse(
-            data=AgentAnswer(question=query.question, answer=answer_text)
-        )
+    best_source = None
+    best_score = 0
 
-    # Build context from retrieved docs
-    context = " ".join([d.page_content for d in relevant_docs])
+    for collection_name in ["cv_en_embeddings", "faq_en_embeddings"]:
+        vector_store = vector_stores.get(collection_name)
+        if vector_store:
+            results = vector_store.similarity_search_with_score(question, k=4)
 
-    # Get reusable chat model
-    chat_model = get_chat_model()
+            if results:
+                avg_score = sum(score for _, score in results) / len(results)
+                if best_docs == [] or avg_score < best_score:
+                    best_docs = [doc for doc, _ in results]
+                    best_score = avg_score
+                    best_source = collection_name
 
-    # Generate answer constrained to context
-    answer = chat_model.invoke(
-        f"Answer the question using ONLY the following context:\n\n{context}\n\n"
-        f"If the answer is not explicitly in the context, respond with:\n"
-        f"\"I couldn’t find that information in Jorge’s profile. "
-        f"Please ask about his background, education, experience, or skills.\""
-        f"\n\nQuestion: {query.question}"
+
+    if not best_docs:
+        fallback = "I couldn’t find that information in Jorge’s profile. Please ask about his background, education, experience, or skills."
+        save_log(session_id, question, fallback)
+        return AgentResponse(data=AgentAnswer(question=question, answer=fallback))
+
+    context = "\n\n---\n\n".join(
+        f"[source: {best_source}]\n{doc.page_content}" for doc in best_docs
     )
 
-    save_log(query.question, answer.content)
+    chat_model = get_chat_model()
+    chat_history = [
+        {
+            "role": "system",
+            "content": (
+                "You are a helpful assistant that answers questions using ONLY the following context blocks.\n\n"
+                "Each block starts with [source: cv] or [source: faq]. Use the information in these blocks to answer the user question.\n\n"
+                "Do NOT use any prior knowledge, facts, or general information. Your answer MUST be based strictly on the provided context blocks.\n\n"
+                "If the answer is not found explicitly in the context, respond exactly with:\n"
+                "\"I couldn’t find that information in Jorge’s profile. Please ask about his background, education, experience, or skills.\"\n\n"
+                "Give priority to blocks marked as [source: faq] if the question is about preferences, opinions, or personal logistics (e.g., salary, availability, goals, etc.).\n\n"
+                f"{context}"
+            )
+        }
+    ]
+
+    previous_logs = get_last_messages(session_id)
+    for log in previous_logs:
+        chat_history.append({"role": "user", "content": log.question})
+        chat_history.append({"role": "assistant", "content": log.answer})
+
+    chat_history.append({"role": "user", "content": question})
+    answer = chat_model.invoke(chat_history)
+
+    save_log(session_id, question, answer.content)
     return AgentResponse(
-        data=AgentAnswer(question=query.question, answer=answer.content)
+        data=AgentAnswer(question=question, answer=answer.content)
     )
