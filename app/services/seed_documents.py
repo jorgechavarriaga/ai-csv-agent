@@ -80,7 +80,6 @@ def seed_all_documents_in_data_folder():
     for filename in files:
         path = os.path.join(folder, filename)
         collection_name = filename.replace(".txt", "_embeddings")
-        print(collection_name)
         try:
             with open(path, "r", encoding="utf-8") as f:
                 raw_text = f.read()
