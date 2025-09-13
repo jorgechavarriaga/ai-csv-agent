@@ -44,7 +44,7 @@ def get_all_vector_stores(force: bool = False) -> Dict[str, PGVector]:
                     {"name": collection_name},
                 ).scalar()
 
-            if force or result == 0:
+            if force or result is None or result == 0:
                 if result == 0:
                     logger.warning("Collection '%s' empty. Seeding...", collection_name)
                 elif force:
@@ -85,4 +85,17 @@ def get_all_vector_stores(force: bool = False) -> Dict[str, PGVector]:
         logger.warning("No vector stores loaded.")
 
     logger.info("Vector stores initialized successfully.")
+    for collection_name in COLLECTIONS:
+        if collection_name not in vector_stores:
+            logger.warning("Fallback: collection '%s' not loaded. Forcing regeneration...", collection_name)
+            seed_all_documents_in_data_folder()
+            try:
+                vector_stores[collection_name] = PGVector(
+                    embeddings,
+                    collection_name=collection_name,
+                    connection=CONNECTION_URI,
+                )
+                logger.info("Fallback: collection '%s' successfully loaded.", collection_name)
+            except Exception as e:
+                logger.error("Fallback failed for '%s': %s", collection_name, e)
     return vector_stores
