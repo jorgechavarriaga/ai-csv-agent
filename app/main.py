@@ -29,7 +29,10 @@ app = FastAPI(
     - If the answer is not available in the dataset, the agent will respond politely
       indicating that the requested information is not present.
     """,
-    version="1.1.0"
+    version="1.1.0",
+    docs_url=None,     
+    redoc_url=None,    
+    openapi_url=None   
 )
 
 init_db()
@@ -38,7 +41,7 @@ register_exception_handlers(app)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=["https://www.chavazystem.tech", "http://localhost:8000"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -65,10 +68,11 @@ def on_shutdown():
 # Register routers
 app.include_router(agent.router, prefix="/api/v1", tags=["Agent"])
 app.include_router(health.router, prefix="/api/v1", tags=["Health"])
-app.include_router(logs.router, prefix="/api/v1", tags=["Logs"])
+# app.include_router(logs.router, prefix="/api/v1", tags=["Logs"])
 
 
 # Redirect root to Swagger UI
 @app.get("/", include_in_schema=False)
 def root():
-    return RedirectResponse(url="/docs")
+    return RedirectResponse(url="https://www.chavazystem.tech")
+
