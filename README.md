@@ -60,7 +60,13 @@ POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_DB=ai_agent
 
+# Switch to True to create tables
+ENABLE_FORCE_SEED=False
+
 OPENAI_API_KEY=sk-xxxx
+
+# USER = POSTGRES_USER, PWD = POSTGRES_PASSWORD, DB = POSTGRES_DB
+DATABASE_URL=postgresql+psycopg://USER:PWD:5432/DB
 ```
 
 3. Load your datasets into the `/data` folder:
