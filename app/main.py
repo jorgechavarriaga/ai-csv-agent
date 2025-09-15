@@ -6,6 +6,10 @@ from app.utils.db import engine, Base
 from app.utils.error_handler import register_exception_handlers  
 from app.services.vectorstore import get_all_vector_stores
 from app.utils.logging.logger import get_logger
+from fastapi.middleware.cors import CORSMiddleware
+from app.utils.init_db import init_db
+from app.config.settings import settings
+
 
 logger = get_logger("AI Agent")
 
@@ -28,13 +32,23 @@ app = FastAPI(
     version="1.1.0"
 )
 
+init_db()
+
 register_exception_handlers(app)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], 
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.on_event("startup")
 def on_startup():
     try:
         Base.metadata.create_all(bind=engine)
-        app.state.vector_stores = get_all_vector_stores()  
+        app.state.vector_stores = get_all_vector_stores(force=settings.ENABLE_FORCE_SEED)  
         if app.state.vector_stores:
             logger.info("Vector stores initialized successfully.")
         else:

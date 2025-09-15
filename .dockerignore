@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# macOS / Linux system files
+.DS_Store
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Environment files
+.env
+.env.*
+
+# Compiled files
+*.egg-info/
+build/
+dist/
+
+# __data__ or user data folders
+data/
+
+# Docker artifacts
+*.tar

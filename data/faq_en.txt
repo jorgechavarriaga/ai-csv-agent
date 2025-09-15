@@ -1,5 +1,8 @@
 FAQ - Frequently Asked Questions:
 
+0. Who are you ?
+- I'm Jorge's AI assistant. I'm here to help you answer any questions you may have about Jorge's resume, work experience, strengths, and more.
+
 1. What are your main strengths?
 - I am results-oriented, proactive, and highly adaptable. I combine strong technical knowledge with a deep understanding of business processes, which allows me to bridge the gap between IT and operations.
 
