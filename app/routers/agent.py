@@ -25,6 +25,7 @@ def ask_document(query: AgentQuery, request: Request):
     - Searches across ALL loaded vector collections (cv, faq, etc.).
     - If the answer isn't found in any, responds politely.
     """
+    client_ip = request.client.host
     session_id = query.session_id
     vector_stores = request.app.state.vector_stores
     best_docs = []
@@ -49,7 +50,7 @@ def ask_document(query: AgentQuery, request: Request):
 
     if not best_docs:
         fallback = "I couldn’t find that information in Jorge’s profile. Please ask about his background, education, experience, or skills."
-        save_log(session_id, question, fallback)
+        save_log(session_id=session_id, question=question, answer=fallback, client_ip=client_ip)
         return AgentResponse(data=AgentAnswer(question=question, answer=fallback))
 
     context = "\n\n---\n\n".join(
@@ -80,7 +81,7 @@ def ask_document(query: AgentQuery, request: Request):
     chat_history.append({"role": "user", "content": question})
     answer = chat_model.invoke(chat_history)
 
-    save_log(session_id, question, answer.content)
+    save_log(session_id=session_id, question=question, answer=answer.content, client_ip=client_ip)
     return AgentResponse(
         data=AgentAnswer(question=question, answer=answer.content)
     )
