@@ -3,6 +3,7 @@ from pydantic import SecretStr
 
 
 class Settings(BaseSettings):
+    ENVIRONMENT: str = "development"
     POSTGRES_USER: str
     POSTGRES_PASSWORD: SecretStr
     POSTGRES_HOST: str = "localhost"

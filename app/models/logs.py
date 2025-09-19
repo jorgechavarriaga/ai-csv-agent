@@ -8,4 +8,5 @@ class AgentLog(Base):
     session_id = Column(String, nullable=False, index=True)
     question = Column(Text, nullable=False)
     answer = Column(Text, nullable=False)
+    ip_address = Column(String(45)) 
     created_at = Column(TIMESTAMP, server_default=func.now())

@@ -6,7 +6,9 @@ class LogEntry(BaseModel):
     id: int
     question: str
     answer: str
+    ip_address: str
     created_at: str
+
 
 class LogsResponse(BaseModel):
     """Typed response for logs endpoint"""

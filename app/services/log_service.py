@@ -10,7 +10,7 @@ from app.utils.logging.logger import get_logger
 logger = get_logger("AI Agent")
 
 
-def save_log(session_id: str, question: str, answer: str) -> None:
+def save_log(session_id: str, question: str, answer: str, client_ip: str) -> None:
     """Persist interaction log into Postgres."""
     try:
         with SessionLocal() as session:
@@ -18,6 +18,7 @@ def save_log(session_id: str, question: str, answer: str) -> None:
                 session_id=session_id,
                 question=question,
                 answer=answer,
+                ip_address= client_ip,
                 created_at=datetime.now(timezone.utc),
             )
             session.add(log)
@@ -48,6 +49,7 @@ def get_logs(limit: int = 50):
                 LogEntry(
                     id=log.id,
                     question=log.question,
+                    ip_address=log.ip_address, 
                     answer=log.answer,
                     created_at=log.created_at.isoformat()
                 )
