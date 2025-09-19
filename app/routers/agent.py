@@ -25,7 +25,7 @@ def ask_document(query: AgentQuery, request: Request):
     - Searches across ALL loaded vector collections (cv, faq, etc.).
     - If the answer isn't found in any, responds politely.
     """
-    client_ip = request.client.host
+    client_ip = request.headers.get("x-forwarded-for", request.client.host)
     session_id = query.session_id
     vector_stores = request.app.state.vector_stores
     best_docs = []
