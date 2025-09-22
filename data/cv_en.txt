@@ -1,98 +1,187 @@
-Name: Jorge Chavarriaga
-Titles: Full Stack Developer, Security Engineer, Logistic Manager, Mechanical Engineer
+### Document Title: Jorge Chavarriaga's Curriculum Vitae (CV)
 
-Contact:
-- Email: jorge.chavarriaga@gmail.com
-- Phone: +1 418 321 1335
-- Website: https://www.chavazystem.tech
-- LinkedIn: linkedin.com/in/jorge-chava
-- GitHub: github.com/jorgechavarriaga
-- Whatsapp
-- Telegram
+**Purpose:** This document provides a structured dataset for an AI assistant to answer questions about Jorge Chavarriaga's professional background, skills, and accomplishments.
 
-Education:
-- Google Business Intelligence | Royal Alberta College | 2024 | Online
-- Google Advanced Data Analytics | Royal Alberta College | 2023 | Online
-- Google Data Analytics | Royal Alberta College | 2023 | Online
-- Google IT Automation with Python | Royal Alberta College | 2023 | Online
-- Security Engineer Nanodegree | Udacity | 2021 | Online
-- Full Stack Developer | Codeboxx Technology School | 2020-2021 | Canada
-- Specialization in Manager Skills | The George Washington University School of Business | 2017 | Colombia
-- Diploma in Business Logistic | Medellin University | 2005-2006 | Colombia
-- Mechanical Engineering | EAFIT University | 1992-1997 | Colombia
+-----
 
-Languages:
-- Spanish: 100% (Native)
-- English: 80% (Fluent)
-- French: 50% (Intermediate)
+### 1. Personal Information
 
-International Fairs:
-- Warehouses Logistic Tour | Momentum Manhattan
-- RFID Logistic Tour | RFID Journal
-- Promat
+* **Name:** Jorge Chavarriaga
+* **Primary Title:** Full Stack Developer
+* **Secondary Titles:** Security Engineer, Logistic Manager, Mechanical Engineer
 
-Interests:
-- Music
-- Hiking
-- Cooking
-- Technology
+-----
 
-Summary of Qualifications:
-Highly motivated, energetic and self-driven engineer with thorough understanding of business environment, cross-cultural management and business potential.
-Experienced professional with demonstrated skills in distribution, logistics, warehouse management, transportation and planning.
-Strategic, analytic, results oriented, responsible and efficient. Strong negotiation skills.
-Ability to successfully drive initiatives and lead initiatives within cross functional teams.
-Effective supporting and contributing to the development of processes and systems to manage distribution transactions.
-Proficient identifying opportunities to lower costs and increase productivity. Able to set targets and budgets plans to achieve specific goals.
+### 2. Contact Information
 
-Experience:
-- Full Stack Developer | CodeBoxx Digital Solutions | Canada | Jun 2020 - Present
-  * Monitored and supported tasks across SSIS, BOOMI, and Snowflake, providing first-level troubleshooting and resolution for platform issues.
-  * Led the design and implementation of a B2B marketplace web application, enabling efficient upload and validation of product information. This solution streamlined integration with external e-commerce platforms, reducing processing times by 70% and improving data accuracy by 90%.
-  * Implemented a C# solution for transforming a financial report from Excel into a web-based dashboard, reducing generation time from 4–6 hours to under a minute.
-  * Documented critical processes, identified repetitive failures, and implemented improvements, resulting in a 95% reduction in failure rates.
-  * Developed a connector in Go (Golang) for integrating purchase orders between a vendor and suppliers.
+* **Email:** jorge.chavarriaga@gmail.com
+* **Phone:** +1 418 321 1335
+* **Website:** [https://www.chavazystem.tech](https://www.chavazystem.tech)
+* **LinkedIn:** [linkedin.com/in/jorge-chava](https://linkedin.com/in/jorge-chava)
+* **GitHub:** [github.com/jorgechavarriaga](https://github.com/jorgechavarriaga)
+* **Whatsapp:** wa.me/+14183211335
+* **Telegram:** t.me/jorgechavarriaga
 
-- Warehouse Clerk | Ssense | Canada | Oct 2019 - Jan 2020
-  * Responsible for picking items in the warehouse to supply daily orders.
-  * Conducted quality checks on returned garments.
+-----
 
-- Logistic and Distribution Manager | Crystal SAS | Colombia | 2004 - 2018
-  * Led national and international logistic distribution operations.
-  * Managed CAD $3.5M budget execution.
-  * Expanded the main distribution center by 37%, generating 5% annual savings.
-  * Achieved 19% savings in freight contracts by standardizing bidding processes.
-  * Implemented satellite operations for packing, returns, and distribution, saving 9% annually.
-  * Participated in ERP SAP AFS scoping and WMS Manhattan upgrade (2004 → 2012).
-  * Directed RFID pilot from distribution center to point of sale.
-  * Managed e-commerce and POP distribution centers in Colombia, Mexico, and Costa Rica.
+### 3. Summary of Qualifications
 
-- Manager, Raw Materials Distribution Center | Crystal SAS | Colombia | 1999 - 2004
-  * Designed and implemented processes for the new raw materials distribution center.
-  * Reduced delivery times by 12% via reengineering.
-  * Standardized advance ship notice in Colombia with GS1, reducing reception times by 22%.
-  * Managed resources and operations to meet planning targets.
+* **Professional Identity:** Highly motivated, energetic and self-driven engineer with a thorough understanding of the business environment, cross-cultural management, and business potential.
+* **Experience:** Experienced professional with demonstrated skills in distribution, logistics, warehouse management, transportation, and planning.
+* **Key Attributes:** Strategic, analytic, results-oriented, responsible, and efficient. Strong negotiation skills.
+* **Leadership Skills:** Ability to successfully drive initiatives and lead initiatives within cross-functional teams.
+* **Process Improvement:** Effective supporting and contributing to the development of processes and systems to manage distribution transactions. Proficient in identifying opportunities to lower costs and increase productivity. Able to set targets and budget plans to achieve specific goals.
 
-Skills and Proficiency:
-- Full Stack Developer Skills:
-  - SQL Server: 80%
-  - Snowflake: 75%
-  - Boomi: 70%
-  - Python: 80%
-  - C#: 65%
-  - Ruby on Rails: 65%
-  - Go: 65%
-  - Flutter: 55%
-  - HTML: 80%
-  - CSS: 65%
-  - JavaScript: 75%
+-----
 
-- Logistic Manager Skills:
-  - Supply Chain Management: 85%
-  - Operations Management: 80%
-  - Inventory Management: 90%
-  - Distribution Center Operations: 90%
-  - Business Analysis: 80%
-  - Warehouse Management: 90%
-  - Project Management: 80%
-  - Strategic Planning: 80%
+### 4. Professional Experience
+
+* **Job 1:**
+  * **Role:** Full Stack Developer
+  * **Company:** CodeBoxx Digital Solutions
+  * **Location:** Canada
+  * **Dates:** June 2020 – Present
+  * **Accomplishments:**
+    * Monitored and supported tasks across SSIS, BOOMI, and Snowflake, providing first-level troubleshooting and resolution for platform issues.
+    * Led the design and implementation of a B2B marketplace web application, enabling efficient upload and validation of product information. This solution streamlined integration with external e-commerce platforms, **reducing processing times by 70%** and **improving data accuracy by 90%**.
+    * Implemented a C# solution for transforming a financial report from Excel into a web-based dashboard, **reducing generation time from 4–6 hours to under a minute**.
+    * Documented critical processes, identified repetitive failures, and implemented improvements, **resulting in a 95% reduction in failure rates**.
+    * Developed a connector in Go (Golang) for integrating purchase orders between a vendor and suppliers.
+
+* **Job 2:**
+  * **Role:** Warehouse Clerk
+  * **Company:** Ssense
+  * **Location:** Canada
+  * **Dates:** October 2019 – January 2020
+  * **Accomplishments:**
+    * Responsible for picking items in the warehouse to supply daily orders.
+    * Conducted quality checks on returned garments.
+
+* **Job 3:**
+  * **Role:** Logistic and Distribution Manager
+  * **Company:** Crystal SAS
+  * **Location:** Colombia
+  * **Dates:** 2004 – 2018
+  * **Accomplishments:**
+    * Led national and international logistic distribution operations.
+    * Responsible for the elaboration and budget execution of **CAD $3.5 million**.
+    * Led the expansion of the main distribution center increasing the capacity by 37% with an end result of **5% of annual savings** due to the consolidation of warehouses.
+    * Generated **19% of annual savings** in the contracts for freight ground transportation through the standardization of the bidding process.
+    * Led the implementation of satellite operations for packing, returns and distribution, resulting in a **9% annual cost reduction from 2008 to 2015**.
+    * Participated Project Scoping to implement ERP SAP AFS, and relevant interfaces with the WMS Manhattan Associates, and Warehouse Control System.
+    * Project manager of the WMS Manhattan Associates’ upgrade from 2004 Release 1 to 2012 Release 1 customized to the business requirements.
+    * Defined distribution strategy and successfully executed to completion.
+    * Ensured the fulfillment of service policies within cross functional teams, and external clients.
+    * Negotiated best agreements with logistic distribution suppliers to improve service and reduce cost.
+    * Defined and deployed strategic enhancements to increase productivity and improve financial results.
+    * Led the design and implementation of processes and systems required to manage the production plants and the distribution centers of textiles, trims and finished goods.
+    * Analyzed, defined and coordinated the relocation of production plants.
+    * Led the mechatronics’ team to develop the warehouse control system to manage the distribution center.
+    * Led the pilot of Radio-Frequency Identification (RFID) including processes and systems from the distribution center up to the point of sale.
+    * Project manager for build and start-up of distribution centers of e-commerce and point of purchase (POP) in Colombia and distribution centers in Mexico and Costa Rica running under WMS of SAP AFS.
+
+* **Job 4:**
+  * **Role:** Manager, Raw Materials Distribution Center
+  * **Company:** Crystal SAS
+  * **Location:** Colombia
+  * **Dates:** 1999 – 2004
+  * **Accomplishments:**
+    * Led the design and implementation of processes and systems required to manage the new raw materials distribution center.
+    * Planned, implemented and executed a reengineering process to the distribution center of raw materials, **reducing delivery times by 12%**.
+    * Participated and led with GS1-Colombia the definition and standardization of the advance ship notice (ASN) for raw materials in the Colombian market, **reducing reception times by 22%**.
+    * Managed resources and operational materials in coordination with planning management.
+    * Planned and executed new operations, ensuring time, cost and quality of service.
+
+-----
+
+### 5. Skills and Proficiency
+
+* **Development Technologies:**
+  * **Advanced:** SQL Server, Python, HTML, JavaScript
+  * **Proficient:** Snowflake, Boomi, C#, Ruby on Rails, Go, CSS
+  * **Intermediate:** Flutter
+
+* **Logistics and Business Skills:**
+  * **Advanced:** Inventory Management, Distribution Center Operations, Warehouse Management
+  * **Proficient:** Supply Chain Management, Operations Management, Business Analysis, Project Management, Strategic Planning
+
+-----
+
+### 6. Education and Certifications
+
+* **Certifications:**
+  * **Google Business Intelligence**
+    * **Institution:** Royal Alberta College
+    * **Year:** 2024
+    * **Relevance:** Complements my data analytics skills and demonstrates my ability to use tools for creating business insights and data-driven solutions.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=Google_Business_Intelligence.png
+  * **Google Advanced Data Analytics**
+    * **Institution:** Royal Alberta College
+    * **Year:** 2023
+    * **Relevance:** Builds upon foundational data skills, providing background in statistical analysis and machine learning concepts relevant to both my developer and logistics roles.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=Google_Advanced_Data_Analytics.png
+  * **Google Data Analytics**
+    * **Institution:** Royal Alberta College
+    * **Year:** 2023
+    * **Relevance:** Provides a foundational understanding of data analysis processes, a core skill for identifying opportunities and improving productivity.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=Google_Data_Analytics.png
+  * **Google IT Automation with Python**
+    * **Institution:** Royal Alberta College
+    * **Year:** 2023
+    * **Relevance:** Directly relates to my Python skills (80% proficiency) and my experience in automating processes to reduce failure rates and improve efficiency.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=Google_IT_Automation_With_Python.jpg
+  * **Security Engineer Nanodegree**
+    * **Institution:** Udacity
+    * **Year:** 2021
+    * **Relevance:** Supports my title as a Security Engineer and provides a strong understanding of security principles critical for modern software development.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=UDACITY_Security_Engineer_Nanodegree.jpg
+  * **Full Stack Developer**
+    * **Institution:** Codeboxx Technology School
+    * **Years:** 2020–2021
+    * **Relevance:** Provided the comprehensive skills needed to lead and develop full-stack projects for CodeBoxx Digital Solutions.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=CODEBOXX_FullStackDeveloper.jpg
+
+* **Formal Education:**
+  * **Specialization in Manager Skills**
+    * **Institution:** George Washington University School of Business
+    * **Institution URL:** https://business.gwu.edu/
+    * **Year:** 2017
+    * **Relevance:** Supports my experience as a Logistic and Distribution Manager, showcasing cross-cultural management, strategic planning, and leadership.
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=GeorgeWashingtonUniversity_ManagementSkills.jpeg
+  * **Diploma in Business Logistic**
+    * **Institution:** Medellin University
+    * **Institution URL:** https://udemedellin.edu.co/
+    * **Years:** 2005–2006
+    * **Relevance:** Provided the foundation for my long-term career in logistics, distribution, and warehouse management at Crystal SAS.
+    * **Comparative Evaluation (Quebec):** Specialized Graduate Diploma, Title: Business Management
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=UdM_Logistic.jpeg
+  * **Mechanical Engineering**
+    * **Institution:** EAFIT University
+    * **Institution URL:** https://www.eafit.edu.co/en
+    * **Years:** 1992–1997
+    * **Relevance:** Engineering background providing strong foundations in problem-solving and systems thinking, applied to both logistics and software development.
+    * **Comparative Evaluation (Quebec):** Baccalaureate, Title: Mechanical Engineering
+    * **Certificate:** https://www.chavazystem.tech/image-viewer.html?image=Eafit_MechanicalEngineer.jpeg
+
+-----
+
+### 7. Languages
+
+* **Spanish:** Native
+* **English:** Fluent
+* **French:** Intermediate
+
+-----
+
+### 8. Other Information
+
+* **International Fairs Attended:**
+  * Warehouses Logistic Tour (Momentum Manhattan)
+  * RFID Logistic Tour (RFID Journal)
+  * Promat
+
+* **Interests:**
+  * Music
+  * Hiking
+  * Cooking
+  * Technology

@@ -1,124 +1,197 @@
-FAQ - Frequently Asked Questions:
+### Document Title: Jorge Chavarriaga's AI FAQ (Frequently Asked Questions) Dataset
 
-0. Who are you ?
-- I'm Jorge's AI assistant. I'm here to help you answer any questions you may have about Jorge's resume, work experience, strengths, and more.
+**Purpose:** This document provides a structured dataset for an AI assistant to answer common questions about Jorge Chavarriaga's professional and personal background.
 
-1. What are your main strengths?
-- I am results-oriented, proactive, and highly adaptable. I combine strong technical knowledge with a deep understanding of business processes, which allows me to bridge the gap between IT and operations.
+-----
 
-2. What are your main weaknesses?
-- I tend to be very detail-oriented, which can sometimes slow me down. However, I’ve learned to balance precision with efficiency over time.
+### Assistant Introduction
 
-3. What motivates you at work?
-- Solving complex problems, learning new technologies, and creating tools or solutions that make processes faster and more efficient.
+* **Q:** Who are you?  
+  * **A:** I'm Jorge's AI assistant. I'm here to help you answer any questions you may have about Jorge's resume, work experience, strengths, and more.
 
-4. What is your greatest professional achievement?
-- Designing and implementing a B2B marketplace web platform that reduced processing times by 70% and improved data accuracy by 90%.
+-----
 
-5. Why do you want to work with us?
-- I’m looking for a team where I can continue to grow while contributing to impactful projects. Your company’s vision aligns with my values and technical interests.
+### 0. Greetings
 
-6. What are your salary expectations?
-- I’m open to discussing compensation based on the role's responsibilities and the overall benefits package.
+* **Q:** Hi / Hello / Hey / Good morning / Good evening / Good night
+  * **A:** Hello! I’m Jorge’s AI assistant. How can I help you today?
 
-7. Are you open to relocation or remote work?
-- Yes, I’m fully open to remote opportunities and flexible to relocate depending on the project and team dynamics.
+* **Q:** Are you available? / Is anyone there?
+  * **A:** Yes, I’m here to answer any questions you may have about Jorge Chavarriaga.
 
-8. How do you handle stress or pressure?
-- I prioritize tasks, break them into smaller steps, and stay focused on solutions. I also rely on documentation and automation to reduce repetitive stressors.
+-----
 
-9. Describe your leadership style.
-- I lead by example, promote collaboration, and encourage continuous improvement through constructive feedback and knowledge sharing.
+### 1. Technical Profile
 
-10. What programming languages are you most comfortable with?
-- Python, SQL, JavaScript, and C#. I also have experience with Go, Ruby on Rails, and Flutter.
+* **Q:** What are your main strengths?  
+  * **A:** I combine strong technical expertise in full-stack development and data integration with a solid background in business and logistics. This allows me to bridge IT and operations effectively. I’m also highly results-oriented, adaptable, and skilled at optimizing processes.
 
-11. What technologies or tools have you worked with recently?
-- Snowflake, Boomi, SSIS, Docker, FastAPI, Strapi, PostgreSQL, and RabbitMQ.
+* **Q:** What are your main weaknesses?  
+  * **A:** I can be very detail-oriented, which sometimes slows me down. Over time, I’ve learned to balance precision with efficiency by relying more on automation and prioritization.
 
-12. Do you prefer frontend or backend development?
-- I enjoy working across the stack, but I particularly thrive in backend development and systems integration.
+* **Q:** What motivates you at work?  
+  * **A:** I’m motivated by solving complex problems, building tools that simplify processes, and learning new technologies that can create real impact in productivity and efficiency.
 
-13. How do you stay updated with new technologies?
-- I follow technical blogs, take online courses, and participate in open-source or personal side projects.
+* **Q:** What is your greatest professional achievement?  
+  * **A:** At CodeBoxx, I designed and implemented a B2B marketplace platform that reduced processing times by 70% and improved data accuracy by 90%. I also automated a financial report that used to take up to 6 hours into a dashboard that generates results in under a minute.
 
-14. Can you describe a time when you solved a complex problem?
-- I automated a 6-hour Excel financial report into a web dashboard using C#, reducing generation time to under a minute.
+* **Q:** Why do you want to work with us?  
+  * **A:** I’m looking to contribute to impactful projects where I can apply my technical and logistics experience while continuing to grow. I value companies that combine innovation with strong operational execution.
 
-15. What’s your availability?
-- I’m available to start with two weeks' notice, or sooner depending on current commitments.
+* **Q:** What are your salary expectations?  
+  * **A:** Compensation is important, but my focus is on the role’s responsibilities and growth opportunities. I’m flexible and open to discussing a fair package aligned with the position.
 
-16. Are you legally authorized to work in Canada?
-- Yes, I am legally authorized to work in Canada.
+* **Q:** Are you open to relocation or remote work?  
+  * **A:** Yes. I have experience working on international projects and I’m fully open to remote roles or relocation, depending on the team’s needs.
 
-17. How do you handle disagreements within a team?
-- I listen actively, focus on facts over opinions, and work toward consensus with professionalism and respect.
+* **Q:** How do you handle stress or pressure?  
+  * **A:** I approach it methodically: breaking down complex tasks into smaller steps, prioritizing, and using documentation and automation to reduce repetitive issues. This way I stay focused on solutions rather than problems.
 
-18. What’s your preferred working environment?
-- I prefer collaborative environments that value initiative, transparency, and continuous learning.
+* **Q:** Describe your leadership style.  
+  * **A:** I lead by example and encourage collaboration. In my logistics management roles, I guided cross-functional teams by setting clear goals, supporting them with processes, and promoting continuous improvement.
 
-19. Where do you see yourself in 3 to 5 years?
-- Growing into a lead developer or solution architect role, mentoring others, and delivering high-impact projects.
+* **Q:** What programming languages are you most comfortable with?  
+  * **A:** I work mainly with Python, SQL, and JavaScript, but I also have solid experience with C#, Go, Ruby on Rails, and Flutter.
 
-20. Why should we hire you?
-- I bring a rare mix of technical expertise, business insight, and international logistics experience, making me highly versatile for complex, cross-functional challenges.
+* **Q:** What technologies or tools have you worked with recently?  
+  * **A:** I’ve been working with Snowflake, Boomi, SSIS, Docker, FastAPI, Strapi, PostgreSQL, and RabbitMQ, applying them to both data integration and web development projects.
 
-21. What experience do you have in logistics and distribution?
-- I managed logistics operations at Crystal S.A.S for 14 years, overseeing national distribution, warehouse operations, and third-party logistics coordination.
+* **Q:** Do you prefer frontend or backend development?  
+  * **A:** I enjoy both, but I thrive most in backend development and systems integration, where I can optimize performance and connect multiple platforms.
 
-22. What size of operations have you handled?
-- I led distribution for a network of over 120 retail stores and managed a warehouse with over 20,000 SKUs and 50+ employees.
+* **Q:** How do you stay updated with new technologies?  
+  * **A:** I take specialized courses, follow technical communities, and run personal side projects where I test new tools before applying them in production environments.
 
-23. What KPIs do you typically track in logistics?
-- Order accuracy, on-time delivery rate, inventory turnover, picking productivity, and distribution cost per unit.
+* **Q:** Can you describe a time when you solved a complex problem?  
+  * **A:** A good example is when I automated a financial reporting process. It used to take 4–6 hours in Excel, and I developed a C# web dashboard that reduced the time to less than a minute.
 
-24. What warehouse systems have you worked with?
-- I’ve worked with WMS, RF technologies, barcode systems, and integrated ERP systems for inventory and logistics tracking.
+* **Q:** What’s your availability?  
+  * **A:** I can usually start within two weeks, but I can adapt depending on the urgency of the role.
 
-25. Have you managed third-party logistics (3PL) providers?
-- Yes, I’ve negotiated contracts and managed performance of 3PLs for last-mile distribution and nationwide deliveries.
+* **Q:** Are you legally authorized to work in Canada?  
+  * **A:** Yes, I am fully authorized to work in Canada.
 
-26. What’s your approach to reducing logistics costs?
-- I focus on route optimization, demand forecasting, cross-docking, and inventory consolidation to reduce costs and increase efficiency.
+* **Q:** How do you handle disagreements within a team?  
+  * **A:** I listen carefully, focus on facts, and try to find a common ground. My goal is always to keep the project moving forward with professionalism and respect.
 
-27. How do you manage inventory accuracy?
-- Through regular cycle counts, system reconciliations, and strict inbound/outbound verification processes.
+* **Q:** What’s your preferred working environment?  
+  * **A:** I prefer collaborative environments where transparency and knowledge sharing are valued, and where innovation is encouraged.
 
-28. What challenges have you faced in logistics and how did you solve them?
-- I’ve managed large-scale inventory discrepancies and solved them by redesigning warehouse workflows and implementing stricter quality control.
+* **Q:** Where do you see yourself in 3 to 5 years?  
+  * **A:** I see myself in a lead developer or solution architect role, mentoring others and contributing to projects with high business impact.
 
-29. How do you ensure timely deliveries?
-- By maintaining accurate forecasts, aligning closely with sales and production, and using performance dashboards to monitor deliveries in real time.
+* **Q:** Why should we hire you?  
+  * **A:** Because I bring a unique combination of full-stack development skills, security knowledge, and 14+ years of logistics management experience. This makes me versatile to handle both technical and business challenges effectively.
 
-30. Describe your experience with returns or reverse logistics.
-- I developed and implemented a reverse logistics process to handle returns from retail stores, improving visibility and reducing write-offs.
+-----
 
-31. Have you worked with cross-functional teams?
-- Yes, I regularly collaborated with sales, production, and finance to align logistics goals with overall business strategy.
+### 2. Logistics Profile
 
-32. What safety protocols have you implemented in warehouses?
-- I enforced PPE policies, forklift safety training, and implemented 5S methodology to maintain a clean and secure environment.
+* **Q:** What experience do you have in logistics and distribution?  
+  * **A:** I managed logistics operations at Crystal S.A.S for 14 years, overseeing national and international distribution, warehouse operations, and e-commerce logistics. I also directed projects in Colombia, Mexico, and Costa Rica, leading both distribution centers and reverse logistics processes.
 
-33. How do you handle peak season demand?
-- With temporary staff onboarding, extended shifts, and cross-trained teams to ensure flexibility and productivity during high volume periods.
+* **Q:** What size of operations have you handled?  
+  * **A:** I was responsible for a distribution network serving more than 120 retail stores, with a warehouse managing over 20,000 SKUs and a team of 50+ employees. I also managed a budget execution of CAD $3.5 million annually.
 
-34. What’s your approach to staff training and development?
-- I build competency matrices, offer hands-on coaching, and promote from within to boost morale and reduce turnover.
+* **Q:** What KPIs do you typically track in logistics?  
+  * **A:** Order accuracy, on-time delivery, inventory turnover, picking productivity, warehouse capacity utilization, and distribution cost per unit.
 
-35. How do you prioritize urgent orders?
-- I classify them in the system, coordinate with dispatch, and realign resources without compromising regular operations.
+* **Q:** What warehouse systems have you worked with?  
+  * **A:** I worked with WMS Manhattan Associates, integrated ERP SAP AFS, barcode systems, and RFID technology. I also participated in upgrades and customizations to adapt them to business requirements.
 
-36. Have you led logistics digital transformation initiatives?
-- Yes, I’ve introduced scanning systems, digitized warehouse documentation, and integrated dashboards for real-time performance monitoring.
+* **Q:** Have you managed third-party logistics (3PL) providers?  
+  * **A:** Yes. I negotiated contracts and monitored the performance of 3PL providers, particularly for last-mile distribution and international freight, achieving significant cost savings.
 
-37. How do you monitor supplier or vendor compliance?
-- Through SLAs, scorecards, and regular performance reviews to ensure accountability and quality standards.
+* **Q:** What’s your approach to reducing logistics costs?  
+  * **A:** I focus on process optimization, route planning, freight contract standardization, and warehouse consolidation. These initiatives generated annual savings of 19% in transportation and 9% in satellite operations.
 
-38. How do you balance cost vs. service in logistics decisions?
-- I analyze total landed cost and customer impact to make decisions that align with business goals and client satisfaction.
+* **Q:** How do you manage inventory accuracy?  
+  * **A:** By implementing cycle counts, using GS1 standards such as ASN (Advance Ship Notice), and integrating verification processes at both inbound and outbound stages. This reduced reception times by 22%.
 
-39. What software or tools do you use in logistics?
-- WMS, ERP systems, Excel, Power BI, and specialized tools for route planning and inventory forecasting.
+* **Q:** What challenges have you faced in logistics and how did you solve them?  
+  * **A:** One major challenge was reducing delivery lead times. Through reengineering processes at the raw materials distribution center, I improved delivery times by 12%. I also solved discrepancies by redesigning workflows and adding quality checkpoints.
 
-40. What makes you an effective logistics manager?
-- My ability to optimize processes, manage large teams, and align logistics with business objectives—while maintaining service excellence.
+* **Q:** How do you ensure timely deliveries?  
+  * **A:** By aligning forecasts with sales and production, monitoring KPIs in real time, and maintaining flexible operations that adapt to changing demand.
+
+* **Q:** Describe your experience with returns or reverse logistics.  
+  * **A:** I developed and implemented a reverse logistics system for returns from retail stores. This improved tracking, reduced write-offs, and provided better visibility of product flow back into inventory.
+
+* **Q:** Have you worked with cross-functional teams?  
+  * **A:** Yes, frequently. I collaborated with production, sales, and finance to align logistics strategies with business goals. This helped ensure service levels and cost targets were met.
+
+* **Q:** What safety protocols have you implemented in warehouses?  
+  * **A:** I introduced PPE requirements, forklift training programs, and applied 5S methodology to maintain safe, efficient, and organized workplaces.
+
+* **Q:** How do you handle peak season demand?  
+  * **A:** By planning ahead with temporary staff, cross-training employees, and using extended shifts. This ensured service continuity even during high demand periods.
+
+* **Q:** What’s your approach to staff training and development?  
+  * **A:** I created competency matrices, provided hands-on training, and promoted internal growth. This boosted morale, reduced turnover, and built strong operational teams.
+
+* **Q:** How do you prioritize urgent orders?  
+  * **A:** I classify urgent orders in the system, allocate resources quickly, and adjust scheduling without compromising overall operations.
+
+* **Q:** Have you led logistics digital transformation initiatives?  
+  * **A:** Yes, I implemented RFID pilots, barcode scanning, and digitized warehouse documentation. I also developed dashboards to monitor logistics KPIs in real time.
+
+* **Q:** How do you monitor supplier or vendor compliance?  
+  * **A:** Through clear SLAs, vendor scorecards, and regular reviews. This helped improve accountability and service reliability.
+
+* **Q:** How do you balance cost vs. service in logistics decisions?  
+  * **A:** I always consider total landed cost together with service impact. The goal is to reduce costs but without affecting customer satisfaction or operational quality.
+
+* **Q:** What software or tools do you use in logistics?  
+  * **A:** ERP SAP AFS, WMS Manhattan, GS1 standards, RFID systems, Excel, and Power BI for analytics.
+
+* **Q:** What makes you an effective logistics manager?  
+  * **A:** My ability to design efficient processes, manage large teams, and connect logistics strategy with business goals. I focus on reducing costs while maintaining service excellence.
+
+-----
+
+### 3. Personal Information (Recruiter FAQs)
+
+* **Q:** What is your full name?
+  * **A:** Jorge Chavarriaga
+
+* **Q:** Where are you currently located?
+  * **A:** I’m currently based in Canada.
+
+* **Q:** What’s your primary job title?
+  * **A:** Full Stack Developer
+
+* **Q:** Do you have other roles or backgrounds?
+  * **A:** Yes, I also have experience as a Security Engineer, Logistic Manager, and Mechanical Engineer.
+
+* **Q:** Are you open to remote work?
+  * **A:** Yes, I’m fully open to remote work and hybrid opportunities.
+
+* **Q:** Are you willing to relocate?
+  * **A:** Yes, I’m open to relocation depending on the opportunity.
+
+* **Q:** Are you legally authorized to work in Canada?
+  * **A:** Yes, I’m fully authorized to work in Canada.
+
+* **Q:** What’s your English level?
+  * **A:** Fluent.
+
+* **Q:** Do you speak any other languages?
+  * **A:** Yes, I’m a native Spanish speaker and have intermediate proficiency in French.
+
+* **Q:** Do you need sponsorship?
+  * **A:** No, I do not require sponsorship to work in Canada.
+
+* **Q:** What’s your current employment status?
+  * **A:** I’m currently employed at CodeBoxx Digital Solutions.
+
+* **Q:** How soon can you start a new role?
+  * **A:** I can usually start within two weeks, depending on the position’s urgency.
+
+* **Q:** Do you have a portfolio or website?
+  * **A:** Yes: https://www.chavazystem.tech
+
+* **Q:** Where can I find your resume?
+  * **A:** You can find my resume directly on my personal site or ask me for specific sections here.
+
+* **Q:** Can I contact you directly?
+  * **A:** Yes, you can reach me at jorge.chavarriaga@gmail.com or via WhatsApp at +1 418 321 1335
