@@ -1,14 +1,14 @@
 from fastapi import APIRouter
-from app.schemas import HealthResponse, HealthData, ErrorResponse
+from app.schemas import HealthResponse, HealthData, ErrorResponse, SuccessResponse
 from app.utils.logging.logger import get_logger
-
+from app.utils.llm import get_chat_status
 
 logger = get_logger("AI Agent")
-
 router = APIRouter(tags=["Health"])
 
+
 @router.get(
-    "/status",
+    "/health",
     summary="Health check endpoint",
     response_model=HealthResponse,
     responses={
@@ -29,4 +29,36 @@ def health():
         logger.error("Failed to fetch status: %s", str(e).split("\n")[0])
         return ErrorResponse(
             error={"code": 500, "message": "Unexpected error in health check"}
+        )
+    
+
+@router.get(
+    "/health/ai",
+    summary="Health check for OpenAI API",
+    response_model=SuccessResponse,
+    responses={
+        200: {"description": "LLM is online", "model": SuccessResponse},
+        503: {"description": "LLM is offline", "model": ErrorResponse},
+    }
+)
+def ai_health_check():
+    """
+    Checks the availability of the OpenAI API (ChatOpenAI).
+    Returns 'online' or 'offline' based on connectivity and quota.
+    """
+    try:
+        status = get_chat_status()
+        if status == "online":
+            return SuccessResponse(data={"status": "online"})
+        else:
+            logger.warning("LLM service reported as offline.")
+            return ErrorResponse(
+                status="error",
+                error={"code": 503, "message": "LLM service unavailable"}
+            )
+    except Exception as e:
+        logger.error("LLM health check failed: %s", str(e).split("\n")[0])
+        return ErrorResponse(
+            status="error",
+            error={"code": 500, "message": "Unexpected error in LLM health check"}
         )
