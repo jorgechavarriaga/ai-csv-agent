@@ -1,9 +1,17 @@
-# AI CSV Agent 🚀
+# AI CSV Agent 🤖
 
-An AI-powered agent built with **FastAPI**, **LangChain**, **Postgres + pgvector**, and **OpenAI**,
-designed to answer questions strictly based on predefined datasets.
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?logo=fastapi&logoColor=white) 
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) 
+![pgvector](https://img.shields.io/badge/pgvector-000000?logo=postgresql&logoColor=white) 
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=chainlink&logoColor=white) 
+![ChatOpenAI](https://img.shields.io/badge/ChatOpenAI-412991?logo=openai&logoColor=white) 
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white)  
 
-This project is structured with a focus on **professionalism, scalability, and maintainability**,
+An AI-powered agent built with **FastAPI**, **LangChain + ChatOpenAI**, **Postgres + pgvector**,  
+designed to answer questions strictly based on predefined datasets (`cv_en.txt` and `faq_en.txt`).
+
+This project is structured with a focus on **professionalism, scalability, and maintainability**,  
 featuring clean architecture, centralized logging, consistent error handling, and typed schemas.
 
 ---
@@ -23,6 +31,7 @@ ai-csv-agent/
 │   ├── cv_en.txt            # CV content (technical, academic, experience)
 │   └── faq_en.txt           # Frequently asked questions (preferences, logistics)
 ├── Dockerfile               # Docker build file
+├── docker-compose.yml       # Docker orchestration (FastAPI + Postgres)
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
 ```
@@ -34,7 +43,7 @@ ai-csv-agent/
 - Python **3.11+**
 - PostgreSQL with **pgvector** extension
 - [OpenAI API Key](https://platform.openai.com/)
-- (Optional) Docker + Docker Compose
+- Docker + Docker Compose
 
 ---
 
@@ -73,7 +82,7 @@ DATABASE_URL=postgresql+psycopg://USER:PWD:5432/DB
 
 ```
 data/cv_en.txt     ← Jorge's background, studies, experience
-data/faq_en.txt    ← FAQ: salary expectations, availability, goals, etc.
+data/faq_en.txt    ← FAQ: recruiter-oriented questions
 ```
 
 4. Run the server:
@@ -99,8 +108,20 @@ When a question is sent to the agent:
 
 ### 1. Health Check
 
-**GET** `/api/v1/status`  
-Verifies the API is alive.
+**GET** `/api/v1/health/ai`  
+Verifies the API and LLM are online.
+
+✅ Example response:
+
+```json
+{
+    "status": "success",
+    "data": {
+        "status": "online"
+    }
+}
+```
+
 
 ---
 
@@ -112,8 +133,8 @@ Verifies the API is alive.
 
 ```json
 {
-  "session_id": "1",
-  "question": "What are Jorge's salary expectations?"
+  "session_id": "1da8b06f-a8c0-4bb9-84d7-c39355175676",
+  "question": "Where does Jorge work?"
 }
 ```
 
@@ -121,11 +142,11 @@ Verifies the API is alive.
 
 ```json
 {
-  "status": "success",
-  "data": {
-    "question": "What are Jorge's salary expectations?",
-    "answer": "I couldn’t find that information in Jorge’s profile. Please ask about his background, education, experience, or skills."
-  }
+    "status": "success",
+    "data": {
+        "question": "Where does Jorge work?",
+        "answer": "Jorge works at CodeBoxx Digital Solutions in Canada."
+    }
 }
 ```
 
@@ -163,6 +184,47 @@ Handled cases include:
 
 ---
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    A[Frontend - GitHub Pages + Cloudflare] -->|Fetch API| B[Backend - FastAPI on Synology NAS]
+    B --> C[PostgreSQL + pgvector - Embeddings Storage]
+    C --> D[LLM - LangChain + ChatOpenAI - OpenAI wrapper]
+
+    %% 🎨 Styling
+    style A fill:#4F81BD,stroke:#2E3B55,stroke-width:2px,color:white
+    style B fill:#C0504D,stroke:#6A1B1A,stroke-width:2px,color:white
+    style C fill:#9BBB59,stroke:#4A7023,stroke-width:2px,color:white
+    style D fill:#8064A2,stroke:#4B2D73,stroke-width:2px,color:white
+```
+
+- **Frontend** → Static site with CV + chatbot widget.  
+- **Backend** → FastAPI API exposed via reverse proxy.  
+- **DB** → Stores embeddings and logs.  
+- **LLM** → Uses LangChain’s `ChatOpenAI` class to call OpenAI chat models.  
+
+---
+
+## 📦 Tech Stack
+
+- **Frontend**: HTML, CSS, JS, Bootstrap, jQuery, FontAwesome.  
+- **Backend**: FastAPI, Docker, PostgreSQL, pgvector, SQLAlchemy, LangChain.  
+- **LLM Integration**: LangChain + `ChatOpenAI` (wrapper for OpenAI’s GPT models).  
+- **Infra**: GitHub Pages, Cloudflare (DNS + SSL), Synology NAS (DS224+).  
+
+---
+
+## 🔒 Key Features
+
+- ✅ Answers strictly limited to CV + FAQ.  
+- ✅ Online/Offline status check for assistant.  
+- ✅ Dockerized backend for portability.  
+- ✅ Cloudflare SSL & domain management.  
+- ✅ Multilanguage CV rendering (EN, FR, ES).  
+
+---
+
 ## 📝 Roadmap
 
 📦 This repo covers only the **backend** logic.
@@ -177,7 +239,7 @@ Handled cases include:
 - Tracked in [separate web repo]
 
 ### Phase 3 — Dockerization
-- In progress...
+- ✅ Implemented with Dockerfile + docker-compose
 
 ---
 
@@ -193,3 +255,5 @@ Built by **Jorge Chavarriaga**
 - Split context into `cv_en.txt` and `faq_en.txt`
 - Enhanced context scoring and source prioritization
 - Enforced "only from context" answering rule
+- Added `/api/v1/health/ai` endpoint
+- Dockerized backend with PostgreSQL + pgvector
