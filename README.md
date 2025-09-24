@@ -28,8 +28,12 @@ ai-csv-agent/
 │   ├── services/            # Business logic (vector store, logs, seeders)
 │   └── utils/               # Utilities (db, logger, error handler, LLM)
 ├── data/                    # Datasets for embeddings
-│   ├── cv_en.txt            # CV content (technical, academic, experience)
-│   └── faq_en.txt           # Frequently asked questions (preferences, logistics)
+│   ├── cv_en.txt            # CV content (English)
+│   ├── cv_es.txt            # CV content (Spanish)
+│   ├── cv_fr.txt            # CV content (French)
+│   ├── faq_en.txt           # FAQ (English)
+│   ├── faq_es.txt           # FAQ (Spanish)
+│   └── faq_fr.txt           # FAQ (French)
 ├── Dockerfile               # Docker build file
 ├── docker-compose.yml       # Docker orchestration (FastAPI + Postgres)
 ├── requirements.txt         # Python dependencies
@@ -96,11 +100,14 @@ uvicorn app.main:app --reload
 
 When a question is sent to the agent:
 
-1. It runs similarity search over **both** `cv_en` and `faq_en` vectors.
-2. The most relevant source is selected based on **average similarity**.
-3. Context is injected into the LLM with a strict prompt:
-   - Do **not** answer if the info is not explicitly present.
-   - Prefer `faq` for questions about **preferences or logistics**.
+1. The frontend includes `session_id`, `question`, and `language` (en|es|fr) in the payload.  
+2. The backend routes the query to the corresponding vector stores (`cv_xx` + `faq_xx` for the selected language).  
+3. If no results are found in that language, the agent gracefully falls back to English collections.  
+4. The most relevant source is selected based on **average similarity**.  
+5. Context is injected into the LLM with a strict prompt:
+   - Do **not** answer if the info is not explicitly present.  
+   - Prefer `faq` for questions about **preferences or logistics**.  
+
 
 ---
 
@@ -134,7 +141,8 @@ Verifies the API and LLM are online.
 ```json
 {
   "session_id": "1da8b06f-a8c0-4bb9-84d7-c39355175676",
-  "question": "Where does Jorge work?"
+  "question": "Where does Jorge work?",
+  "language": "en"
 }
 ```
 
@@ -149,6 +157,9 @@ Verifies the API and LLM are online.
     }
 }
 ```
+
+ℹ️ `language` must be one of: `"en"`, `"es"`, `"fr"`.  
+If not provided or unsupported, the backend defaults to English.  
 
 ---
 
@@ -200,9 +211,13 @@ flowchart LR
 ```
 
 - **Frontend** → Static site with CV + chatbot widget.  
+  Sends payload including `session_id`, `question`, and `language` (en|es|fr).  
 - **Backend** → FastAPI API exposed via reverse proxy.  
+  Routes queries to `cv_xx_embeddings` and `faq_xx_embeddings` collections based on language,  
+  with automatic fallback to English if no results are found.  
 - **DB** → Stores embeddings and logs.  
 - **LLM** → Uses LangChain’s `ChatOpenAI` class to call OpenAI chat models.  
+ 
 
 ---
 
@@ -221,7 +236,8 @@ flowchart LR
 - ✅ Online/Offline status check for assistant.  
 - ✅ Dockerized backend for portability.  
 - ✅ Cloudflare SSL & domain management.  
-- ✅ Multilanguage CV rendering (EN, FR, ES).  
+- ✅ Multilingual chatbot support (EN, ES, FR): queries are routed to language-specific embeddings and responses are always returned in the selected language (with fallback to English if needed).  
+
 
 ---
 
