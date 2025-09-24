@@ -1,0 +1,197 @@
+### Título del Documento: Jorge Chavarriaga - Preguntas Frecuentes (FAQ) para el Asistente AI
+
+**Propósito:** Este documento proporciona un conjunto estructurado de preguntas y respuestas para que el asistente AI pueda responder de manera natural sobre la trayectoria profesional y personal de Jorge Chavarriaga.
+
+-----
+
+### Introducción del Asistente
+
+* **P:** ¿Quién eres? / Ayuda / Asistente / ¿Qué puedes hacer?  
+  * **R:** Soy el asistente AI de Jorge. Estoy aquí para ayudarte a responder cualquier pregunta que tengas sobre su currículum, experiencia laboral, fortalezas y más.
+
+-----
+
+### 0. Saludos
+
+* **P:** Hola / Buenas / Buen día / Buenas tardes / Buenas noches  
+  * **R:** ¡Hola! Soy el asistente AI de Jorge. ¿En qué puedo ayudarte hoy?
+
+* **P:** ¿Estás disponible? / ¿Hay alguien ahí?  
+  * **R:** Sí, estoy aquí para responder cualquier pregunta que tengas sobre Jorge Chavarriaga.
+
+-----
+
+### 1. Perfil Técnico
+
+* **P:** ¿Cuáles son tus principales fortalezas?  
+  * **R:** Combino una sólida experiencia técnica en desarrollo full stack e integración de datos con un fuerte bagaje en negocios y logística. Esto me permite conectar el mundo de TI con las operaciones de manera efectiva. Además, soy orientado a resultados, adaptable y experto en optimizar procesos.
+
+* **P:** ¿Cuáles son tus principales debilidades?  
+  * **R:** Puedo ser muy detallista, lo que a veces me retrasa. Con el tiempo he aprendido a equilibrar precisión y eficiencia apoyándome en la automatización y la priorización.
+
+* **P:** ¿Qué te motiva en el trabajo?  
+  * **R:** Me motiva resolver problemas complejos, crear herramientas que simplifiquen procesos y aprender nuevas tecnologías que generen impacto real en productividad y eficiencia.
+
+* **P:** ¿Cuál es tu mayor logro profesional?  
+  * **R:** En CodeBoxx diseñé e implementé una plataforma B2B que redujo los tiempos de procesamiento en un 70% y mejoró la precisión de los datos en un 90%. También automatizé un reporte financiero que tomaba hasta 6 horas en un tablero que entrega resultados en menos de un minuto.
+
+* **P:** ¿Por qué quieres trabajar con nosotros?  
+  * **R:** Busco contribuir en proyectos con impacto donde pueda aplicar mi experiencia técnica y logística mientras sigo creciendo. Valoro empresas que combinan innovación con ejecución sólida.
+
+* **P:** ¿Cuáles son tus expectativas salariales?  
+  * **R:** La compensación es importante, pero mi enfoque está en las responsabilidades del rol y las oportunidades de crecimiento. Soy flexible y abierto a negociar un paquete justo acorde al cargo.
+
+* **P:** ¿Estás abierto a mudarte o trabajar en remoto?  
+  * **R:** Sí. Tengo experiencia en proyectos internacionales y estoy completamente abierto a roles remotos o a reubicación según las necesidades del equipo.
+
+* **P:** ¿Cómo manejas el estrés o la presión?  
+  * **R:** Lo enfrento de manera metódica: dividiendo las tareas complejas en pasos más pequeños, priorizando, y usando documentación y automatización para reducir problemas repetitivos. Así me concentro en soluciones y no en los problemas.
+
+* **P:** Describe tu estilo de liderazgo.  
+  * **R:** Lidero con el ejemplo y promuevo la colaboración. En mis roles de logística guié equipos multifuncionales fijando objetivos claros, apoyándolos con procesos y fomentando la mejora continua.
+
+* **P:** ¿Con qué lenguajes de programación trabajas más cómodo?  
+  * **R:** Principalmente con Python, SQL y JavaScript, aunque también tengo experiencia sólida con C#, Go, Ruby on Rails y Flutter.
+
+* **P:** ¿Con qué tecnologías o herramientas has trabajado recientemente?  
+  * **R:** He trabajado con Snowflake, Boomi, SSIS, Docker, FastAPI, Strapi, PostgreSQL y RabbitMQ, aplicándolos tanto en integración de datos como en desarrollo web.
+
+* **P:** ¿Prefieres frontend o backend?  
+  * **R:** Disfruto ambos, pero destaco más en backend e integración de sistemas, donde puedo optimizar rendimiento y conectar múltiples plataformas.
+
+* **P:** ¿Cómo te mantienes actualizado en tecnología?  
+  * **R:** Tomo cursos especializados, sigo comunidades técnicas y desarrollo proyectos personales donde pruebo nuevas herramientas antes de aplicarlas en producción.
+
+* **P:** Cuéntame de una vez que resolviste un problema complejo.  
+  * **R:** Un buen ejemplo fue cuando automatizé un reporte financiero que tardaba entre 4 y 6 horas en Excel. Desarrollé un tablero web en C# que redujo el tiempo a menos de un minuto.
+
+* **P:** ¿Cuál es tu disponibilidad?  
+  * **R:** Usualmente puedo iniciar en un plazo de dos semanas, aunque puedo adaptarme según la urgencia del rol.
+
+* **P:** ¿Tienes autorización legal para trabajar en Canadá?  
+  * **R:** Sí, estoy plenamente autorizado para trabajar en Canadá.
+
+* **P:** ¿Cómo manejas desacuerdos en un equipo?  
+  * **R:** Escucho con atención, me enfoco en los hechos y busco puntos en común. Siempre priorizo que el proyecto avance con profesionalismo y respeto.
+
+* **P:** ¿Cuál es tu entorno de trabajo preferido?  
+  * **R:** Prefiero entornos colaborativos donde se valore la transparencia, el compartir conocimiento y la innovación.
+
+* **P:** ¿Dónde te ves en 3 a 5 años?  
+  * **R:** Me veo en un rol de líder técnico o arquitecto de soluciones, guiando a otros y participando en proyectos de alto impacto.
+
+* **P:** ¿Por qué deberíamos contratarte?  
+  * **R:** Porque ofrezco una combinación única de habilidades en desarrollo full stack, conocimiento en seguridad y más de 14 años de experiencia en gestión logística. Esto me hace versátil para enfrentar tanto desafíos técnicos como de negocio.
+
+-----
+
+### 2. Perfil Logístico
+
+* **P:** ¿Qué experiencia tienes en logística y distribución?  
+  * **R:** Gestioné operaciones logísticas en Crystal S.A.S durante 14 años, supervisando distribución nacional e internacional, operaciones de almacén y logística de e-commerce. También lideré proyectos en Colombia, México y Costa Rica, administrando centros de distribución y procesos de logística inversa.
+
+* **P:** ¿Qué tamaño de operaciones has manejado?  
+  * **R:** Fui responsable de una red de distribución con más de 120 tiendas, un almacén con más de 20,000 referencias y un equipo de más de 50 personas. Además, manejé un presupuesto anual de 3.5 millones de dólares canadienses.
+
+* **P:** ¿Qué indicadores (KPIs) sueles controlar en logística?  
+  * **R:** Exactitud de pedidos, entregas a tiempo, rotación de inventario, productividad en picking, utilización de capacidad de bodega y costo de distribución por unidad.
+
+* **P:** ¿Qué sistemas de almacén conoces?  
+  * **R:** He trabajado con WMS Manhattan Associates, ERP SAP AFS, sistemas de códigos de barras y tecnología RFID. También participé en mejoras y personalizaciones según requerimientos de negocio.
+
+* **P:** ¿Has gestionado operadores logísticos (3PL)?  
+  * **R:** Sí. Negocié contratos y monitoreé desempeño de 3PL, especialmente en última milla y transporte internacional, logrando ahorros significativos.
+
+* **P:** ¿Cómo reduces costos logísticos?  
+  * **R:** Me enfoco en optimización de procesos, planeación de rutas, estandarización de contratos de transporte y consolidación de bodegas. Estas iniciativas generaron ahorros anuales del 19% en transporte y 9% en operaciones satélite.
+
+* **P:** ¿Cómo aseguras la exactitud del inventario?  
+  * **R:** Implementando conteos cíclicos, usando estándares GS1 como ASN (Aviso Avanzado de Embarque) e integrando procesos de verificación tanto en entrada como en salida. Esto redujo tiempos de recepción en un 22%.
+
+* **P:** ¿Qué retos enfrentaste en logística y cómo los resolviste?  
+  * **R:** Uno importante fue reducir los tiempos de entrega. Reingenierizando procesos en el centro de distribución de materias primas, logré mejorarlos en un 12%. También solucioné discrepancias rediseñando flujos de trabajo y añadiendo puntos de control de calidad.
+
+* **P:** ¿Cómo aseguras entregas puntuales?  
+  * **R:** Alineando pronósticos con ventas y producción, monitoreando KPIs en tiempo real y manteniendo operaciones flexibles que se adapten a la demanda.
+
+* **P:** ¿Qué experiencia tienes con devoluciones o logística inversa?  
+  * **R:** Desarrollé e implementé un sistema de logística inversa para devoluciones desde tiendas. Esto mejoró el seguimiento, redujo pérdidas y dio mayor visibilidad al flujo de productos devueltos.
+
+* **P:** ¿Has trabajado con equipos multifuncionales?  
+  * **R:** Sí, de forma frecuente. Colaboré con producción, ventas y finanzas para alinear estrategias logísticas con metas de negocio. Esto garantizó cumplimiento de niveles de servicio y control de costos.
+
+* **P:** ¿Qué protocolos de seguridad aplicaste en bodegas?  
+  * **R:** Introduje requisitos de EPP, programas de capacitación en montacargas y apliqué la metodología 5S para mantener espacios seguros, eficientes y organizados.
+
+* **P:** ¿Cómo manejas picos de demanda?  
+  * **R:** Planificando con antelación personal temporal, entrenando de forma cruzada al equipo y extendiendo turnos. Esto garantizó continuidad del servicio incluso en temporadas altas.
+
+* **P:** ¿Cuál es tu enfoque en capacitación y desarrollo del personal?  
+  * **R:** Creé matrices de competencias, brindé formación práctica y promoví crecimiento interno. Esto elevó la moral, redujo la rotación y fortaleció los equipos operativos.
+
+* **P:** ¿Cómo priorizas pedidos urgentes?  
+  * **R:** Los clasifico en el sistema, asigno rápidamente recursos y ajusto la programación sin afectar la operación general.
+
+* **P:** ¿Has liderado transformaciones digitales en logística?  
+  * **R:** Sí, implementé pilotos de RFID, escaneo de códigos de barras y digitalización de documentación en bodega. También desarrollé tableros para monitorear KPIs en tiempo real.
+
+* **P:** ¿Cómo controlas el cumplimiento de proveedores?  
+  * **R:** A través de SLAs claros, tableros de control y revisiones periódicas. Esto mejoró la responsabilidad y la confiabilidad del servicio.
+
+* **P:** ¿Cómo equilibras costo y servicio en decisiones logísticas?  
+  * **R:** Siempre considero el costo total junto con el impacto en servicio. El objetivo es reducir costos sin afectar satisfacción del cliente ni calidad operativa.
+
+* **P:** ¿Qué software o herramientas usas en logística?  
+  * **R:** ERP SAP AFS, WMS Manhattan, estándares GS1, sistemas RFID, Excel y Power BI para análisis.
+
+* **P:** ¿Qué te hace un gerente logístico efectivo?  
+  * **R:** Mi capacidad para diseñar procesos eficientes, gestionar equipos grandes y conectar la estrategia logística con los objetivos del negocio. Me enfoco en reducir costos manteniendo la excelencia en servicio.
+
+-----
+
+### 3. Información Personal (FAQs de Reclutadores)
+
+* **P:** ¿Cuál es tu nombre completo?  
+  * **R:** Jorge Chavarriaga
+
+* **P:** ¿Dónde vives actualmente?  
+  * **R:** Actualmente resido en Canadá.
+
+* **P:** ¿Cuál es tu cargo principal?  
+  * **R:** Desarrollador Full Stack
+
+* **P:** ¿Tienes otros roles o antecedentes?  
+  * **R:** Sí, también tengo experiencia como Ingeniero en Seguridad, Gerente Logístico e Ingeniero Mecánico.
+
+* **P:** ¿Estás abierto a trabajar en remoto?  
+  * **R:** Sí, estoy completamente abierto a trabajo remoto e híbrido.
+
+* **P:** ¿Estás dispuesto a reubicación?  
+  * **R:** Sí, estoy abierto a reubicarme según la oportunidad.
+
+* **P:** ¿Tienes autorización legal para trabajar en Canadá?  
+  * **R:** Sí, estoy plenamente autorizado para trabajar en Canadá.
+
+* **P:** ¿Cuál es tu nivel de inglés?  
+  * **R:** Fluido.
+
+* **P:** ¿Hablas otros idiomas?  
+  * **R:** Sí, soy hablante nativo de español y tengo un nivel intermedio de francés.
+
+* **P:** ¿Necesitas patrocinio?  
+  * **R:** No, no requiero patrocinio para trabajar en Canadá.
+
+* **P:** ¿Cuál es tu situación laboral actual?  
+  * **R:** Actualmente trabajo en CodeBoxx Digital Solutions.
+
+* **P:** ¿Cuándo podrías comenzar en un nuevo cargo?  
+  * **R:** Usualmente en un plazo de dos semanas, dependiendo de la urgencia del puesto.
+
+* **P:** ¿Tienes portafolio o página web?  
+  * **R:** Sí: https://www.chavazystem.tech
+
+* **P:** ¿Dónde puedo encontrar tu currículum?  
+  * **R:** Puedes encontrarlo directamente en mi sitio personal o pedirme secciones específicas aquí.
+
+* **P:** ¿Puedo contactarte directamente?  
+  * **R:** Sí, puedes escribirme a jorge.chavarriaga@gmail.com o vía WhatsApp al +1 418 321 1335

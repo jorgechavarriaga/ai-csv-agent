@@ -1,0 +1,194 @@
+### Título del Documento: Currículum Vitae (CV) de Jorge Chavarriaga
+
+**Propósito:** Este documento proporciona un conjunto estructurado de información para que el asistente AI pueda responder sobre la trayectoria profesional, habilidades y logros de Jorge Chavarriaga.
+
+-----
+
+### 1. Información Personal
+
+* **Nombre:** Jorge Chavarriaga  
+* **Cargo Principal:** Desarrollador Full Stack  
+* **Cargos Secundarios:** Ingeniero en Seguridad, Gerente de Logística, Ingeniero Mecánico  
+
+-----
+
+### 2. Información de Contacto
+
+* **Correo:** jorge.chavarriaga@gmail.com  
+* **Teléfono:** +1 418 321 1335  
+* **Sitio Web:** [https://www.chavazystem.tech](https://www.chavazystem.tech)  
+* **LinkedIn:** [linkedin.com/in/jorge-chava](https://linkedin.com/in/jorge-chava)  
+* **GitHub:** [github.com/jorgechavarriaga](https://github.com/jorgechavarriaga)  
+* **Whatsapp:** wa.me/+14183211335  
+* **Telegram:** t.me/jorgechavarriaga  
+
+-----
+
+### 3. Resumen de Calificaciones
+
+* **Identidad Profesional:** Ingeniero motivado, enérgico y autodirigido, con un amplio entendimiento del entorno empresarial, la gestión multicultural y el potencial de negocios.  
+* **Experiencia:** Profesional con habilidades demostradas en distribución, logística, gestión de almacenes, transporte y planeación.  
+* **Atributos Clave:** Estratégico, analítico, orientado a resultados, responsable y eficiente. Fuertes habilidades de negociación.  
+* **Habilidades de Liderazgo:** Capacidad para impulsar iniciativas y liderar equipos multifuncionales con éxito.  
+* **Mejora de Procesos:** Experto en apoyar y contribuir al desarrollo de procesos y sistemas para gestionar transacciones de distribución. Competente en identificar oportunidades para reducir costos y aumentar productividad. Capaz de establecer metas y planes de presupuesto para lograr objetivos específicos.  
+
+-----
+
+### 4. Experiencia Profesional
+
+* **Cargo 1:**  
+  * **Rol:** Desarrollador Full Stack  
+  * **Empresa:** CodeBoxx Digital Solutions  
+  * **País:** Canadá  
+  * **Fechas:** Junio 2020 – Presente  
+  * **Logros:**  
+    * Supervisé y brindé soporte en tareas con SSIS, BOOMI y Snowflake, ofreciendo resolución de primer nivel a problemas de plataforma.  
+    * Lideré el diseño e implementación de una aplicación web B2B para carga y validación eficiente de información de productos. La solución integró plataformas externas de e-commerce, **reduciendo tiempos de procesamiento en un 70%** y **mejorando la precisión de datos en un 90%**.  
+    * Implementé una solución en C# para transformar un reporte financiero de Excel en un tablero web, **reduciendo el tiempo de generación de 4–6 horas a menos de un minuto**.  
+    * Documenté procesos críticos, identifiqué fallas repetitivas e implementé mejoras, **reduciendo la tasa de fallos en un 95%**.  
+    * Desarrollé un conector en Go (Golang) para integrar órdenes de compra entre un proveedor y sus suministradores.  
+
+* **Cargo 2:**  
+  * **Rol:** Auxiliar de Almacén  
+  * **Empresa:** Ssense  
+  * **País:** Canadá  
+  * **Fechas:** Octubre 2019 – Enero 2020  
+  * **Logros:**  
+    * Encargado del picking de productos en bodega para surtir pedidos diarios.  
+    * Realicé controles de calidad sobre prendas devueltas.  
+
+* **Cargo 3:**  
+  * **Rol:** Gerente de Logística y Distribución  
+  * **Empresa:** Crystal SAS  
+  * **País:** Colombia  
+  * **Fechas:** 2004 – 2018  
+  * **Logros:**  
+    * Dirigí operaciones logísticas nacionales e internacionales.  
+    * Responsable de la elaboración y ejecución de un presupuesto de **CAD $3.5 millones**.  
+    * Lideré la expansión del centro de distribución principal, aumentando la capacidad en un 37% y logrando **ahorros anuales del 5%** gracias a la consolidación de bodegas.  
+    * Generé **ahorros del 19% anual** en contratos de transporte terrestre mediante estandarización de procesos de licitación.  
+    * Implementé operaciones satélite para empaque, devoluciones y distribución, alcanzando una **reducción del 9% en costos anuales (2008–2015)**.  
+    * Participé en la implementación del ERP SAP AFS y sus interfaces con el WMS Manhattan Associates y el sistema de control de almacenes.  
+    * Fui jefe de proyecto para la actualización del WMS Manhattan Associates de la versión 2004 R1 a la 2012 R1, adaptada a requerimientos del negocio.  
+    * Definí y ejecuté la estrategia de distribución con éxito.  
+    * Garantizé cumplimiento de políticas de servicio en equipos multifuncionales y con clientes externos.  
+    * Negocié acuerdos con proveedores logísticos para mejorar servicio y reducir costos.  
+    * Desarrollé mejoras estratégicas para aumentar productividad y resultados financieros.  
+    * Dirigí diseño e implementación de procesos y sistemas para gestionar plantas de producción y centros de distribución de textiles y productos terminados.  
+    * Analicé, definí y coordiné la reubicación de plantas de producción.  
+    * Lideré el equipo de mecatrónica para desarrollar el sistema de control de almacén.  
+    * Implementé un piloto de RFID desde el centro de distribución hasta el punto de venta.  
+    * Fui jefe de proyecto en la construcción y puesta en marcha de centros de distribución e-commerce y puntos de venta (POP) en Colombia, y en la apertura de centros en México y Costa Rica bajo WMS SAP AFS.  
+
+* **Cargo 4:**  
+  * **Rol:** Jefe, Centro de Distribución de Materias Primas  
+  * **Empresa:** Crystal SAS  
+  * **País:** Colombia  
+  * **Fechas:** 1999 – 2004  
+  * **Logros:**  
+    * Lideré diseño e implementación de procesos y sistemas para el nuevo centro de distribución de materias primas.  
+    * Planifiqué e implementé un proceso de reingeniería, **reduciendo tiempos de entrega en un 12%**.  
+    * En conjunto con GS1-Colombia, definí y estandaricé el ASN para materias primas, **reduciendo tiempos de recepción en un 22%**.  
+    * Administré recursos y materiales en coordinación con el área de planeación.  
+    * Planifiqué y ejecuté nuevas operaciones garantizando cumplimiento en tiempo, costo y calidad.  
+
+-----
+
+### 5. Habilidades y Competencias
+
+* **Tecnologías de Desarrollo:**  
+  * **Avanzado:** SQL Server, Python, HTML, JavaScript  
+  * **Competente:** Snowflake, Boomi, C#, Ruby on Rails, Go, CSS  
+  * **Intermedio:** Flutter  
+
+* **Habilidades en Logística y Negocios:**  
+  * **Avanzado:** Gestión de Inventarios, Operación de Centros de Distribución, Gestión de Almacenes  
+  * **Competente:** Gestión de la Cadena de Suministro, Gestión de Operaciones, Análisis de Negocio, Gestión de Proyectos, Planeación Estratégica  
+
+-----
+
+### 6. Educación y Certificaciones
+
+* **Certificaciones:**  
+  * **Google Business Intelligence**  
+    * **Institución:** Royal Alberta College  
+    * **Año:** 2024  
+    * **Relevancia:** Complementa mis habilidades en analítica de datos y demuestra capacidad para crear soluciones basadas en datos.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=Google_Business_Intelligence.png  
+
+  * **Google Advanced Data Analytics**  
+    * **Institución:** Royal Alberta College  
+    * **Año:** 2023  
+    * **Relevancia:** Amplía habilidades en análisis estadístico y machine learning aplicadas a roles de desarrollo y logística.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=Google_Advanced_Data_Analytics.png  
+
+  * **Google Data Analytics**  
+    * **Institución:** Royal Alberta College  
+    * **Año:** 2023  
+    * **Relevancia:** Base sólida en procesos de análisis de datos, esenciales para detectar oportunidades y mejorar productividad.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=Google_Data_Analytics.png  
+
+  * **Google IT Automation with Python**  
+    * **Institución:** Royal Alberta College  
+    * **Año:** 2023  
+    * **Relevancia:** Relacionada con mi dominio en Python y mi experiencia en automatización de procesos.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=Google_IT_Automation_With_Python.jpg  
+
+  * **Nanodegree Ingeniero en Seguridad**  
+    * **Institución:** Udacity  
+    * **Año:** 2021  
+    * **Relevancia:** Soporta mi rol como Ingeniero en Seguridad y provee entendimiento de principios críticos en desarrollo seguro.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=UDACITY_Security_Engineer_Nanodegree.jpg  
+
+  * **Desarrollador Full Stack**  
+    * **Institución:** Codeboxx Technology School  
+    * **Años:** 2020–2021  
+    * **Relevancia:** Proporcionó habilidades completas para liderar proyectos full stack en CodeBoxx Digital Solutions.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=CODEBOXX_FullStackDeveloper.jpg  
+
+* **Educación Formal:**  
+  * **Especialización en Habilidades Gerenciales**  
+    * **Institución:** George Washington University School of Business  
+    * **URL:** https://business.gwu.edu/  
+    * **Año:** 2017  
+    * **Relevancia:** Soporta mi experiencia como Gerente de Logística y Distribución, mostrando gestión multicultural y liderazgo.  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=GeorgeWashingtonUniversity_ManagementSkills.jpeg  
+
+  * **Diplomado en Logística Empresarial**  
+    * **Institución:** Universidad de Medellín  
+    * **URL:** https://udemedellin.edu.co/  
+    * **Años:** 2005–2006  
+    * **Relevancia:** Fundamento de mi carrera en logística, distribución y gestión de almacenes en Crystal SAS.  
+    * **Equivalencia (Quebec):** Diploma de Estudios de Posgrado en Administración de Empresas  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=UdM_Logistic.jpeg  
+
+  * **Ingeniería Mecánica**  
+    * **Institución:** Universidad EAFIT  
+    * **URL:** https://www.eafit.edu.co/en  
+    * **Años:** 1992–1997  
+    * **Relevancia:** Formación en resolución de problemas y pensamiento sistémico, aplicada tanto a logística como a desarrollo de software.  
+    * **Equivalencia (Quebec):** Baccalauréat, Ingeniería Mecánica  
+    * **Certificado:** https://www.chavazystem.tech/image-viewer.html?image=Eafit_MechanicalEngineer.jpeg  
+
+-----
+
+### 7. Idiomas
+
+* **Español:** Nativo  
+* **Inglés:** Fluido  
+* **Francés:** Intermedio  
+
+-----
+
+### 8. Otra Información
+
+* **Ferias Internacionales Asistidas:**  
+  * Warehouses Logistic Tour (Momentum Manhattan)  
+  * RFID Logistic Tour (RFID Journal)  
+  * Promat  
+
+* **Intereses:**  
+  * Música  
+  * Senderismo  
+  * Cocina  
+  * Tecnología  

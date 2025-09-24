@@ -1,5 +1,6 @@
 import urllib.parse
-from typing import Dict
+from typing import Dict, List
+import re, os
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import ProgrammingError, OperationalError
@@ -20,8 +21,19 @@ CONNECTION_URI = f"postgresql+psycopg://{settings.POSTGRES_USER}:{encoded_pass}@
 # Embeddings instance (OpenAI)
 embeddings = OpenAIEmbeddings(api_key=settings.OPENAI_API_KEY)
 
-# List of all vector store collections to initialize
-COLLECTIONS = ["cv_en_embeddings", "faq_en_embeddings"]
+
+def discover_collections() -> List[str]:
+    """
+    Discover all CV/FAQ .txt files in /data and build their collection names.
+    Example: cv_es.txt -> cv_es_embeddings
+    """
+    folder = "data"
+    pattern = re.compile(r"^(cv|faq)_[a-z]{2}\.txt$", re.IGNORECASE)
+    files = [f for f in os.listdir(folder) if pattern.match(f)]
+    collections = [f.replace(".txt", "_embeddings") for f in files]
+
+    logger.info(f"🔎 Discovered collections: {collections}")
+    return collections
 
 
 def get_all_vector_stores(force: bool = False) -> Dict[str, PGVector]:
@@ -32,7 +44,12 @@ def get_all_vector_stores(force: bool = False) -> Dict[str, PGVector]:
     vector_stores = {}
     engine = create_engine(CONNECTION_URI, future=True)
 
-    for collection_name in COLLECTIONS:
+    collections = discover_collections()
+    if not collections:
+        logger.warning("No CV/FAQ collections discovered in /data.")
+        return vector_stores
+
+    for collection_name in collections:
         try:
             with engine.connect() as conn:
                 result = conn.execute(
@@ -83,19 +100,4 @@ def get_all_vector_stores(force: bool = False) -> Dict[str, PGVector]:
 
     if not vector_stores:
         logger.warning("No vector stores loaded.")
-
-    logger.info("Vector stores initialized successfully.")
-    for collection_name in COLLECTIONS:
-        if collection_name not in vector_stores:
-            logger.warning("Fallback: collection '%s' not loaded. Forcing regeneration...", collection_name)
-            seed_all_documents_in_data_folder()
-            try:
-                vector_stores[collection_name] = PGVector(
-                    embeddings,
-                    collection_name=collection_name,
-                    connection=CONNECTION_URI,
-                )
-                logger.info("Fallback: collection '%s' successfully loaded.", collection_name)
-            except Exception as e:
-                logger.error("Fallback failed for '%s': %s", collection_name, e)
     return vector_stores

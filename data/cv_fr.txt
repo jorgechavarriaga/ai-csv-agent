@@ -1,0 +1,179 @@
+### Titre du document : Curriculum Vitae (CV) de Jorge Chavarriaga
+
+**Objectif :** Ce document fournit un ensemble structuré d’informations pour que l’assistant AI puisse répondre sur le parcours professionnel, les compétences et les réalisations de Jorge Chavarriaga.
+
+-----
+
+### 1. Informations Personnelles
+
+* **Nom :** Jorge Chavarriaga  
+* **Titre Principal :** Développeur Full Stack  
+* **Titres Secondaires :** Ingénieur en Sécurité, Gestionnaire Logistique, Ingénieur Mécanique  
+
+-----
+
+### 2. Coordonnées
+
+* **Courriel :** jorge.chavarriaga@gmail.com  
+* **Téléphone :** +1 418 321 1335  
+* **Site Web :** [https://www.chavazystem.tech](https://www.chavazystem.tech)  
+* **LinkedIn :** [linkedin.com/in/jorge-chava](https://linkedin.com/in/jorge-chava)  
+* **GitHub :** [github.com/jorgechavarriaga](https://github.com/jorgechavarriaga)  
+* **Whatsapp :** wa.me/+14183211335  
+* **Telegram :** t.me/jorgechavarriaga  
+
+-----
+
+### 3. Résumé des Qualifications
+
+* **Identité Professionnelle :** Ingénieur motivé, énergique et autonome, avec une solide compréhension de l’environnement des affaires, de la gestion multiculturelle et du potentiel commercial.  
+* **Expérience :** Professionnel expérimenté avec des compétences démontrées en distribution, logistique, gestion d’entrepôt, transport et planification.  
+* **Atouts Clés :** Stratégique, analytique, orienté résultats, responsable et efficace. Fortes compétences en négociation.  
+* **Compétences en Leadership :** Capacité à mener des initiatives et à diriger avec succès des équipes multidisciplinaires.  
+* **Amélioration des Processus :** Expérimenté dans le soutien et la mise en place de processus et systèmes pour gérer les transactions de distribution. Capable d’identifier des opportunités pour réduire les coûts et accroître la productivité.  
+
+-----
+
+### 4. Expérience Professionnelle
+
+* **Poste 1 :**  
+  * **Rôle :** Développeur Full Stack  
+  * **Entreprise :** CodeBoxx Digital Solutions  
+  * **Pays :** Canada  
+  * **Période :** Juin 2020 – Présent  
+  * **Réalisations :**  
+    * Supervision et support des tâches avec SSIS, BOOMI et Snowflake, en assurant la résolution de premier niveau.  
+    * Conception et mise en œuvre d’une application web B2B pour le téléchargement et la validation des informations produits, **réduisant les temps de traitement de 70 %** et **améliorant la précision des données de 90 %**.  
+    * Mise en place d’une solution C# transformant un rapport financier Excel en tableau de bord web, **réduisant le temps de génération de 4–6 heures à moins d’une minute**.  
+    * Documentation des processus critiques, identification des pannes récurrentes et mise en place d’améliorations, **réduisant le taux d’échec de 95 %**.  
+    * Développement d’un connecteur en Go (Golang) pour l’intégration des bons de commande entre fournisseur et distributeurs.  
+
+* **Poste 2 :**  
+  * **Rôle :** Préparateur d’Entrepôt  
+  * **Entreprise :** Ssense  
+  * **Pays :** Canada  
+  * **Période :** Octobre 2019 – Janvier 2020  
+  * **Réalisations :**  
+    * Préparation des commandes en entrepôt pour les expéditions quotidiennes.  
+    * Contrôle qualité sur les articles retournés.  
+
+* **Poste 3 :**  
+  * **Rôle :** Gestionnaire Logistique et Distribution  
+  * **Entreprise :** Crystal SAS  
+  * **Pays :** Colombie  
+  * **Période :** 2004 – 2018  
+  * **Réalisations :**  
+    * Direction des opérations logistiques nationales et internationales.  
+    * Gestion d’un budget annuel de **3,5 millions CAD**.  
+    * Expansion du centre de distribution principal (+37 % de capacité), générant **5 % d’économies annuelles**.  
+    * **19 % d’économies annuelles** sur les contrats de transport terrestre grâce à la standardisation des appels d’offres.  
+    * Mise en place d’opérations satellites pour emballage, retours et distribution, avec **9 % de réduction des coûts (2008–2015)**.  
+    * Participation à l’implémentation de l’ERP SAP AFS et des interfaces avec WMS Manhattan Associates et le système de contrôle d’entrepôt.  
+    * Chef de projet pour la mise à jour de WMS Manhattan (2004 R1 → 2012 R1).  
+    * Définition et exécution de la stratégie de distribution.  
+    * Négociations avec fournisseurs logistiques pour améliorer le service et réduire les coûts.  
+    * Pilotage de projets d’amélioration pour accroître productivité et résultats financiers.  
+    * Direction de l’équipe de mécatronique pour le développement du système de contrôle d’entrepôt.  
+    * Lancement pilote RFID depuis le centre de distribution jusqu’au point de vente.  
+    * Gestion de projets pour la création et la mise en service de centres e-commerce en Colombie, Mexique et Costa Rica.  
+
+* **Poste 4 :**  
+  * **Rôle :** Responsable, Centre de Distribution des Matières Premières  
+  * **Entreprise :** Crystal SAS  
+  * **Pays :** Colombie  
+  * **Période :** 1999 – 2004  
+  * **Réalisations :**  
+    * Conception et mise en place de processus et systèmes pour le nouveau centre de distribution de matières premières.  
+    * Réingénierie des opérations, **réduction des délais de livraison de 12 %**.  
+    * Standardisation avec GS1-Colombie de l’ASN pour matières premières, **réduction des délais de réception de 22 %**.  
+    * Gestion des ressources et coordination avec la planification.  
+    * Lancement et exécution de nouvelles opérations, en assurant délais, coûts et qualité.  
+
+-----
+
+### 5. Compétences et Savoir-Faire
+
+* **Technologies de Développement :**  
+  * **Avancé :** SQL Server, Python, HTML, JavaScript  
+  * **Compétent :** Snowflake, Boomi, C#, Ruby on Rails, Go, CSS  
+  * **Intermédiaire :** Flutter  
+
+* **Compétences Logistiques et Business :**  
+  * **Avancé :** Gestion d’Inventaire, Opérations de Centres de Distribution, Gestion d’Entrepôt  
+  * **Compétent :** Gestion de la Chaîne d’Approvisionnement, Gestion des Opérations, Analyse Business, Gestion de Projets, Planification Stratégique  
+
+-----
+
+### 6. Formation et Certifications
+
+* **Certifications :**  
+  * **Google Business Intelligence**  
+    * **Institution :** Royal Alberta College  
+    * **Année :** 2024  
+    * **Pertinence :** Renforce mes compétences en analyse de données et démontre ma capacité à créer des solutions basées sur les données.  
+
+  * **Google Advanced Data Analytics**  
+    * **Institution :** Royal Alberta College  
+    * **Année :** 2023  
+    * **Pertinence :** Approfondit mes compétences en analyse statistique et apprentissage automatique pour mes rôles de développeur et logistique.  
+
+  * **Google Data Analytics**  
+    * **Institution :** Royal Alberta College  
+    * **Année :** 2023  
+    * **Pertinence :** Base solide en processus d’analyse de données, compétence essentielle pour améliorer la productivité.  
+
+  * **Google IT Automation with Python**  
+    * **Institution :** Royal Alberta College  
+    * **Année :** 2023  
+    * **Pertinence :** Renforce mon expertise en Python et mon expérience en automatisation des processus.  
+
+  * **Nanodegree Ingénieur en Sécurité**  
+    * **Institution :** Udacity  
+    * **Année :** 2021  
+    * **Pertinence :** Consolide mon rôle d’ingénieur en sécurité avec des principes modernes de cybersécurité.  
+
+  * **Développeur Full Stack**  
+    * **Institution :** Codeboxx Technology School  
+    * **Années :** 2020–2021  
+    * **Pertinence :** Compétences complètes pour diriger des projets full stack chez CodeBoxx Digital Solutions.  
+
+* **Formation Académique :**  
+  * **Spécialisation en Compétences Managériales**  
+    * **Institution :** George Washington University School of Business  
+    * **Année :** 2017  
+    * **Pertinence :** Soutient mon expérience comme gestionnaire logistique, en gestion multiculturelle et leadership.  
+
+  * **Diplôme en Logistique d’Entreprise**  
+    * **Institution :** Université de Medellín  
+    * **Années :** 2005–2006  
+    * **Pertinence :** Base de ma carrière en logistique, distribution et gestion d’entrepôt.  
+    * **Équivalence (Québec) :** Diplôme d’Études Supérieures Spécialisées en Gestion des Affaires  
+
+  * **Ingénierie Mécanique**  
+    * **Institution :** Université EAFIT  
+    * **Années :** 1992–1997  
+    * **Pertinence :** Formation en résolution de problèmes et pensée systémique, appliquée à la logistique et au développement logiciel.  
+    * **Équivalence (Québec) :** Baccalauréat en Ingénierie Mécanique  
+
+-----
+
+### 7. Langues
+
+* **Espagnol :** Langue maternelle  
+* **Anglais :** Courant  
+* **Français :** Intermédiaire  
+
+-----
+
+### 8. Autres Informations
+
+* **Salons Internationaux :**  
+  * Warehouses Logistic Tour (Momentum Manhattan)  
+  * RFID Logistic Tour (RFID Journal)  
+  * Promat  
+
+* **Centres d’Intérêt :**  
+  * Musique  
+  * Randonnée  
+  * Cuisine  
+  * Technologie  

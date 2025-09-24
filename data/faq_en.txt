@@ -6,7 +6,7 @@
 
 ### Assistant Introduction
 
-* **Q:** Who are you?  
+* **Q:** Who are you? / Help / Assistant / What can you do?  
   * **A:** I'm Jorge's AI assistant. I'm here to help you answer any questions you may have about Jorge's resume, work experience, strengths, and more.
 
 -----
