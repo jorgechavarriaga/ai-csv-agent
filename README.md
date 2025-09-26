@@ -5,14 +5,24 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) 
 ![pgvector](https://img.shields.io/badge/pgvector-000000?logo=postgresql&logoColor=white) 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=chainlink&logoColor=white) 
-![ChatOpenAI](https://img.shields.io/badge/ChatOpenAI-412991?logo=openai&logoColor=white) 
+![OpenAI](https://img.shields.io/badge/OpenAI-8A2BE2?logo=openai&logoColor=white) 
+![OpenRouter](https://img.shields.io/badge/OpenRouter-FF4500?logo=ai&logoColor=white) 
+![Gemini](https://img.shields.io/badge/Gemini-1A73E8?logo=google&logoColor=white) 
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?logo=cloudflare&logoColor=white)  
 
-An AI-powered agent built with **FastAPI**, **LangChain + ChatOpenAI**, **Postgres + pgvector**,  
-designed to answer questions strictly based on predefined datasets (`cv_en.txt` and `faq_en.txt`).
+
+An AI-powered agent built with **FastAPI**, **LangChain**, and **Postgres + pgvector**,  
+designed to answer questions strictly based on predefined datasets  
+(`cv_en.txt`, `cv_es.txt`, `cv_fr.txt`, `faq_en.txt`, `faq_es.txt`, `faq_fr.txt`).  
+
+Supports **multiple LLM providers with automatic fallback**:  
+- OpenAI (`gpt-3.5-turbo`)  
+- OpenRouter (`x-ai/grok-4-fast:free`)  
+- Google Gemini (`gemini-2.5-flash`)  
 
 This project is structured with a focus on **professionalism, scalability, and maintainability**,  
 featuring clean architecture, centralized logging, consistent error handling, and typed schemas.
+
 
 ---
 
@@ -46,8 +56,18 @@ ai-csv-agent/
 
 - Python **3.11+**
 - PostgreSQL with **pgvector** extension
-- [OpenAI API Key](https://platform.openai.com/)
 - Docker + Docker Compose
+- API Keys (configure depending on which LLM providers you want to enable):
+  - [OpenAI API Key](https://platform.openai.com/)  
+  - [OpenRouter API Key](https://openrouter.ai/)  
+  - [Gemini API Key](https://ai.google.dev/)  
+
+➡️ The priority and fallback order is defined in `.env` using `LLM_PROVIDERS`.  
+Example:  
+
+```env
+LLM_PROVIDERS=["openai", "openrouter", "gemini"]
+```
 
 ---
 
@@ -67,26 +87,34 @@ pip install -r requirements.txt
 2. Configure environment variables in `.env`:
 
 ```env
+# Database
 POSTGRES_USER=ai_user
 POSTGRES_PASSWORD=super_secret
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 POSTGRES_DB=ai_agent
 
-# Switch to True to create tables
+# Switch to True to create tables on startup
 ENABLE_FORCE_SEED=False
 
-OPENAI_API_KEY=sk-xxxx
+# LLM Providers API Keys
+OPENAI_API_KEY=sk-...
+OPENROUTER_API_KEY=sk-or-...
+GEMINI_API_KEY=AIzaSy....
 
-# USER = POSTGRES_USER, PWD = POSTGRES_PASSWORD, DB = POSTGRES_DB
-DATABASE_URL=postgresql+psycopg://USER:PWD:5432/DB
+DATABASE_URL=postgresql+psycopg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
 ```
 
 3. Load your datasets into the `/data` folder:
 
 ```
-data/cv_en.txt     ← Jorge's background, studies, experience
-data/faq_en.txt    ← FAQ: recruiter-oriented questions
+data/cv_en.txt ← Jorge's background, studies, experience (English)
+data/cv_es.txt ← Jorge's background, studies, experience (Spanish)
+data/cv_fr.txt ← Jorge's background, studies, experience (French)
+
+data/faq_en.txt ← FAQ: recruiter-oriented questions (English)
+data/faq_es.txt ← FAQ: recruiter-oriented questions (Spanish)
+data/faq_fr.txt ← FAQ: recruiter-oriented questions (French)
 ```
 
 4. Run the server:
@@ -100,36 +128,77 @@ uvicorn app.main:app --reload
 
 When a question is sent to the agent:
 
-1. The frontend includes `session_id`, `question`, and `language` (en|es|fr) in the payload.  
-2. The backend routes the query to the corresponding vector stores (`cv_xx` + `faq_xx` for the selected language).  
-3. If no results are found in that language, the agent gracefully falls back to English collections.  
-4. The most relevant source is selected based on **average similarity**.  
-5. Context is injected into the LLM with a strict prompt:
-   - Do **not** answer if the info is not explicitly present.  
-   - Prefer `faq` for questions about **preferences or logistics**.  
+1. **Frontend → Backend:**  
+   The frontend sends a payload with `session_id`, `question`, and `language` (`en | es | fr`).  
 
+2. **Language-specific retrieval:**  
+   - The backend routes the query to the corresponding vector stores (`cv_xx` + `faq_xx`) for the selected language.  
+   - If no results are found in that language, the agent gracefully falls back to English collections.  
+
+3. **Source prioritization:**  
+   - The most relevant source is selected based on **average similarity score**.  
+   - `faq` is prioritized for recruiter-style or preference/logistics questions.  
+   - `cv` is prioritized for technical and professional background.  
+
+4. **LLM Fallback:**  
+   - The agent tries providers in the order defined in `.env → LLM_PROVIDERS`.  
+   - Example: `["openai", "openrouter", "gemini"]`  
+     - If OpenAI fails, it automatically switches to OpenRouter.  
+     - If OpenRouter also fails, it falls back to Gemini.  
+   - If all providers are offline, the agent returns a standardized error response.  
+
+5. **Strict prompting:**  
+   - The LLM receives only curated context.  
+   - Responses are strictly limited to CV + FAQ content.  
+   - If the information is not explicitly present, the LLM is instructed **not to answer**.  
 
 ---
 
 ## 🛠️ API Endpoints
 
-### 1. Health Check
+### 0. Health Check (backend only)
+
+**GET** `/api/v1/health`  
+Verifies that the API is alive.  
+
+✅ Example response:
+```json
+{
+  "status": "success",
+  "data": {
+    "status": "ok"
+  }
+}
+```
+
+### 1. Health Check (LLM providers)
 
 **GET** `/api/v1/health/ai`  
-Verifies the API and LLM are online.
+Checks the availability of the LLM service with provider fallback.
 
 ✅ Example response:
 
 ```json
 {
-    "status": "success",
-    "data": {
-        "status": "online"
-    }
+  "status": "success",
+  "data": {
+    "status": "online",
+    "provider": "gemini"
+  }
 }
 ```
 
+If no provider is available:
 
+```json
+{
+  "status": "error",
+  "error": {
+    "code": 503,
+    "message": "LLM service unavailable"
+  }
+}
+```
 ---
 
 ### 2. Ask Agent
@@ -201,7 +270,7 @@ Handled cases include:
 flowchart LR
     A[Frontend - GitHub Pages + Cloudflare] -->|Fetch API| B[Backend - FastAPI on Synology NAS]
     B --> C[PostgreSQL + pgvector - Embeddings Storage]
-    C --> D[LLM - LangChain + ChatOpenAI - OpenAI wrapper]
+    C --> D[LLM Providers:<br/> OpenAI / OpenRouter / Gemini <br/>-fallback chain-]
 
     %% 🎨 Styling
     style A fill:#4F81BD,stroke:#2E3B55,stroke-width:2px,color:white
@@ -210,33 +279,46 @@ flowchart LR
     style D fill:#8064A2,stroke:#4B2D73,stroke-width:2px,color:white
 ```
 
-- **Frontend** → Static site with CV + chatbot widget.  
-  Sends payload including `session_id`, `question`, and `language` (en|es|fr).  
-- **Backend** → FastAPI API exposed via reverse proxy.  
-  Routes queries to `cv_xx_embeddings` and `faq_xx_embeddings` collections based on language,  
-  with automatic fallback to English if no results are found.  
-- **DB** → Stores embeddings and logs.  
-- **LLM** → Uses LangChain’s `ChatOpenAI` class to call OpenAI chat models.  
- 
+- **Frontend** → Static site with CV + chatbot widget.
+  Sends payload including `session_id`, `question`, and `language` (en|es|fr).
+
+- **Backend** → FastAPI API exposed via reverse proxy.
+  Routes queries to `cv_xx_embeddings` and `faq_xx_embeddings` collections based on language,
+  with automatic fallback to English if no results are found.
+
+- **DB** → Stores embeddings and logs.
+
+- **LLM Providers** → Flexible chain of providers:
+
+  - Primary: OpenAI
+  - Fallback: OpenRouter
+  - Secondary fallback: Gemini
+
+If all providers fail, the API responds with a standardized error. 
 
 ---
 
 ## 📦 Tech Stack
 
-- **Frontend**: HTML, CSS, JS, Bootstrap, jQuery, FontAwesome.  
-- **Backend**: FastAPI, Docker, PostgreSQL, pgvector, SQLAlchemy, LangChain.  
-- **LLM Integration**: LangChain + `ChatOpenAI` (wrapper for OpenAI’s GPT models).  
-- **Infra**: GitHub Pages, Cloudflare (DNS + SSL), Synology NAS (DS224+).  
+- **Frontend**: HTML, CSS, JS, Bootstrap, jQuery, FontAwesome  
+- **Backend**: FastAPI, Docker, PostgreSQL, pgvector, SQLAlchemy, LangChain  
+- **LLM Providers (fallback chain)**:  
+  - OpenAI (`gpt-3.5-turbo`)  
+  - OpenRouter (`x-ai/grok-4-fast:free`)  
+  - Gemini (`gemini-2.5-flash`)  
+- **Infra**: GitHub Pages, Cloudflare (DNS + SSL), Synology NAS (DS224+)  
 
 ---
 
 ## 🔒 Key Features
 
-- ✅ Answers strictly limited to CV + FAQ.  
+- ✅ Answers strictly limited to CV + FAQ datasets (EN, ES, FR).  
 - ✅ Online/Offline status check for assistant.  
-- ✅ Dockerized backend for portability.  
+- ✅ Multi-LLM fallback: OpenAI → OpenRouter → Gemini.  
+- ✅ Multilingual support: embeddings and responses available in English, Spanish, and French (with fallback to English if missing).  
+- ✅ Dockerized backend for portability and easy deployment.  
 - ✅ Cloudflare SSL & domain management.  
-- ✅ Multilingual chatbot support (EN, ES, FR): queries are routed to language-specific embeddings and responses are always returned in the selected language (with fallback to English if needed).  
+- ✅ Centralized logging and session-based isolation (per `session_id`).  
 
 
 ---
@@ -246,16 +328,25 @@ flowchart LR
 📦 This repo covers only the **backend** logic.
 
 ### Phase 1 — Context + Isolation
-- ✅ `session_id` support
+- ✅ `session_id` support (isolated sessions per visitor)
 - ✅ Logs per session
 - ✅ Prioritization logic (`faq` vs `cv`)
 - 🟡 Context window size optimization
 
 ### Phase 2 — Frontend integration
-- Tracked in [separate web repo]
+- ✅ Embedded chatbot widget on CV site
+- 🟡 Multi-language UI improvements
 
 ### Phase 3 — Dockerization
 - ✅ Implemented with Dockerfile + docker-compose
+
+### Phase 4 — Multi-LLM Fallback
+- ✅ OpenAI → OpenRouter → Gemini chain
+
+### Phase 5 — Future Enhancements
+- 🔲 Advanced analytics dashboard for logs
+- 🔲 Real-time provider metrics
+- 🔲 Expand to more LLM providers if needed
 
 ---
 
@@ -269,7 +360,9 @@ Built by **Jorge Chavarriaga**
 ## 🔁 Changelog
 
 - Split context into `cv_en.txt` and `faq_en.txt`
+- Added multilingual datasets (`cv_es`, `cv_fr`, `faq_es`, `faq_fr`)
 - Enhanced context scoring and source prioritization
 - Enforced "only from context" answering rule
-- Added `/api/v1/health/ai` endpoint
+- Added `/api/v1/health/ai` endpoint (LLM health check)
 - Dockerized backend with PostgreSQL + pgvector
+- Implemented multi-LLM fallback (OpenAI → OpenRouter → Gemini)

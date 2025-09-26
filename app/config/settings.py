@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings
 from pydantic import SecretStr
+from typing import List
 
 
 class Settings(BaseSettings):
@@ -10,7 +11,10 @@ class Settings(BaseSettings):
     POSTGRES_PORT: int = 5432
     POSTGRES_DB: str
     ENABLE_FORCE_SEED: bool = True
-    OPENAI_API_KEY: str
+    OPENAI_API_KEY: str | None = None
+    OPENROUTER_API_KEY: str | None = None
+    GEMINI_API_KEY: str | None = None
+    LLM_PROVIDERS: List[str] = ["openai"]
 
     class Config:
         env_file = ".env"

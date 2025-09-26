@@ -43,19 +43,21 @@ def health():
 )
 def ai_health_check():
     """
-    Checks the availability of the OpenAI API (ChatOpenAI).
-    Returns 'online' or 'offline' based on connectivity and quota.
+    Checks the availability of the LLM providers (OpenAI, OpenRouter, Gemini).
+    Returns 'online' or 'offline' plus provider info.
     """
     try:
-        status = get_chat_status()
-        if status == "online":
-            return SuccessResponse(data={"status": "online"})
+        status_info = get_chat_status()  
+
+        if status_info["status"] == "online":
+            return SuccessResponse(data=status_info)
         else:
             logger.warning("LLM service reported as offline.")
             return ErrorResponse(
                 status="error",
                 error={"code": 503, "message": "LLM service unavailable"}
             )
+
     except Exception as e:
         logger.error("LLM health check failed: %s", str(e).split("\n")[0])
         return ErrorResponse(
