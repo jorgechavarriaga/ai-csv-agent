@@ -35,9 +35,9 @@ def health():
 @router.get(
     "/health/ai",
     summary="Health check for OpenAI API",
-    response_model=SuccessResponse,
+    response_model=HealthResponse,
     responses={
-        200: {"description": "LLM is online", "model": SuccessResponse},
+        200: {"description": "LLM is online", "model": HealthResponse},
         503: {"description": "LLM is offline", "model": ErrorResponse},
     }
 )
@@ -50,7 +50,7 @@ def ai_health_check():
         status_info = get_chat_status()  
 
         if status_info["status"] == "online":
-            return SuccessResponse(data=status_info)
+            return HealthResponse(data=status_info)
         else:
             logger.warning("LLM service reported as offline.")
             return ErrorResponse(

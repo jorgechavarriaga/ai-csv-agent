@@ -3,6 +3,7 @@ from pydantic import BaseModel
 class HealthData(BaseModel):
     """Schema for health data inside success response"""
     status: str
+    provider: str | None = None
 
 class HealthResponse(BaseModel):
     """Typed response for health endpoint"""
