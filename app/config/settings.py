@@ -12,9 +12,8 @@ class Settings(BaseSettings):
     POSTGRES_DB: str
     ENABLE_FORCE_SEED: bool = True
     OPENAI_API_KEY: str | None = None
-    OPENROUTER_API_KEY: str | None = None
-    GEMINI_API_KEY: str | None = None
     LLM_PROVIDERS: List[str] = ["openai"]
+    OPENAI_MODEL: str | None = None
 
     class Config:
         env_file = ".env"

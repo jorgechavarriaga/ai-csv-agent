@@ -57,7 +57,6 @@ app.add_middleware(
 )
 
 
-
 @app.on_event("startup")
 def on_startup():
     try:

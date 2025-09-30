@@ -99,11 +99,33 @@ def ask_document(query: AgentQuery, request: Request):
     for log in previous_logs:
         chat_history.append({"role": "user", "content": log.question})
         chat_history.append({"role": "assistant", "content": log.answer})
-
     chat_history.append({"role": "user", "content": question})
-    answer = chat_model.invoke(chat_history)
+    try:
+        answer = chat_model.invoke(chat_history)
 
-    save_log(session_id=session_id, question=question, answer=answer.content, client_ip=client_ip)
-    return AgentResponse(
-        data=AgentAnswer(question=question, answer=answer.content)
-    )
+        save_log(
+            session_id=session_id,
+            question=question, 
+            answer=answer.content, 
+            client_ip=client_ip
+            )
+        return AgentResponse(
+            data=AgentAnswer(
+                question=question, 
+                answer=answer.content
+                )
+        )
+    except Exception as e:
+        logger.error("Chat model invocation failed: %s", e, exc_info=True)
+        reply = (
+            "I couldn’t process your request due to a technical issue. "
+            "Please try again later or ask about Jorge’s background, education, experience, or skills."
+        )
+        save_log(
+            session_id=session_id, 
+            question=question, 
+            answer=reply, 
+            client_ip=client_ip)
+        return AgentResponse(
+            data=AgentAnswer(question=question, answer=reply)
+            )

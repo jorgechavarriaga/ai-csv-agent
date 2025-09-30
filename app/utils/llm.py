@@ -1,62 +1,61 @@
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from app.config.settings import settings
+from app.utils.logging.logger import get_logger
+
+
+logger = get_logger("LLM")
+
+
+class FallbackLLM:
+    """Dummy LLM that always returns a safe response."""
+    def invoke(self, messages, **kwargs):
+        return type("LLMResponse", (), {
+            "content": (
+                "No active language model available. "
+                "Please ask about Jorge’s profile, experience, or skills."
+            )
+        })()
 
 
 def _get_provider_model(provider: str):
-    """Return a chat model instance for the given provider name."""
+    """
+    Try to initialize a provider-specific chat model.
+    Returns model instance or None if failed.
+    """
     provider = provider.lower()
-
-    if provider == "openai":
-        if not settings.OPENAI_API_KEY:
-            raise ValueError("Missing OPENAI_API_KEY")
-        return ChatOpenAI(
-            api_key=settings.OPENAI_API_KEY,
-            model="gpt-3.5-turbo",
-            temperature=0,
-            max_tokens=250,
-        )
-
-    elif provider == "openrouter":
-        if not settings.OPENROUTER_API_KEY:
-            raise ValueError("Missing OPENROUTER_API_KEY")
-        return ChatOpenAI(
-            api_key=settings.OPENROUTER_API_KEY,
-            model="x-ai/grok-4-fast:free",
-            base_url="https://openrouter.ai/api/v1",
-            temperature=0,
-            max_tokens=250,
-        )
-
-    elif provider == "gemini":
-        if not settings.GEMINI_API_KEY:
-            raise ValueError("Missing GEMINI_API_KEY")
-        return ChatGoogleGenerativeAI(
-            api_key=settings.GEMINI_API_KEY,
-            model="gemini-2.5-flash",
-            temperature=0,
-            max_output_tokens=250,  
-        )
-
-    else:
-        raise ValueError(f"Unsupported LLM provider: {provider}")
+    try:
+        if provider == "openai":
+            if not settings.OPENAI_API_KEY:
+                logger.warning("OPENAI_API_KEY missing, skipping provider 'openai'.")
+                return None
+            return ChatOpenAI(
+                api_key=settings.OPENAI_API_KEY,
+                model=settings.OPENAI_MODEL,
+                temperature=0,
+                max_tokens=250,
+            )
+        else:
+            logger.warning("Unsupported LLM provider configured: %s", provider)
+            return None
+    except Exception as e:
+        logger.error("Failed to initialize provider '%s': %s", provider, e)
+        return None
 
 
 def get_chat_model():
     """
-    Return a reusable chat model.
-    Tries providers in order defined in settings.LLM_PROVIDERS until one works.
+    Return the first available chat model.
+    Falls back to FallbackLLM if none available.
     """
-    last_error = None
-
     for provider in settings.LLM_PROVIDERS:
-        try:
-            return _get_provider_model(provider)
-        except Exception as e:
-            last_error = e
-            continue
+        model = _get_provider_model(provider)
+        if model:
+            logger.info("Using LLM provider: %s", provider)
+            return model
 
-    raise RuntimeError(f"All LLM providers failed. Last error: {last_error}")
+    logger.error("No valid LLM provider available. Using fallback.")
+    return FallbackLLM()
 
 
 def get_chat_status() -> dict:
@@ -67,9 +66,11 @@ def get_chat_status() -> dict:
     for provider in settings.LLM_PROVIDERS:
         try:
             model = _get_provider_model(provider)
+            if not model:
+                continue
             model.invoke([{"role": "user", "content": "ping"}])
             return {"status": "online", "provider": provider}
-        except Exception:
+        except Exception as e:
+            logger.warning("Provider '%s' ping failed: %s", provider, e)
             continue
-
-    return {"status": "offline", "provider": None}
+    return {"status": "offline", "provider": "fallback"}
