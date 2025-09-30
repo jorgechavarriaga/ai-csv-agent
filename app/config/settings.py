@@ -5,6 +5,7 @@ from typing import List
 
 class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
+    PORT: int = 8000
     POSTGRES_USER: str
     POSTGRES_PASSWORD: SecretStr
     POSTGRES_HOST: str = "localhost"

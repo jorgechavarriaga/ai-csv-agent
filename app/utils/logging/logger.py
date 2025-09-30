@@ -1,6 +1,7 @@
 import sys
 import logging
 from app.utils.logging.formatter import ColorFormatter
+from app.config.settings import settings
 
 
 def get_logger(name: str) -> logging.Logger:
@@ -14,12 +15,10 @@ def get_logger(name: str) -> logging.Logger:
         - CRITICAL (magenta)
     """
     logger = logging.getLogger(name)
-
     if not logger.handlers:
         handler = logging.StreamHandler(sys.stdout)
         formatter = ColorFormatter("%(levelname)s %(asctime)s - %(name)s - %(message)s")
         handler.setFormatter(formatter)
         logger.addHandler(handler)
         logger.setLevel(logging.INFO)
-
     return logger
