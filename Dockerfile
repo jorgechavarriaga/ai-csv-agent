@@ -16,6 +16,13 @@ RUN apt-get update && \
 # Copy the rest of the application
 COPY . .
 
+# Create user without privileges
+RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
+RUN chown -R appuser:appgroup /app
+
+# Change to no-root user
+USER appuser
+
 # Expose the port FastAPI will run on
 EXPOSE 8000
 

@@ -1,5 +1,4 @@
 from langchain_openai import ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
 from app.config.settings import settings
 from app.utils.logging.logger import get_logger
 

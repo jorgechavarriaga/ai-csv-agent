@@ -127,9 +127,24 @@ uvicorn app.main:app --reload
 
 7. Or run with Docker:
 
+- DEVELOPMENT
 ```
 docker compose up -d --build
 ```
+
+- Loads both docker-compose.yml and docker-compose.override.yml.
+- Backend runs with uvicorn --reload.
+- Postgres available at localhost:5433.
+
+- PRODUCTION
+```
+docker compose -f docker-compose.yml up -d --build
+```
+
+- Uses only docker-compose.yml.
+- Postgres not exposed to the host.
+- Backend runs with uvicorn in production mode (--workers).
+- Network ai_net isolates app and database.
 
 ---
 
